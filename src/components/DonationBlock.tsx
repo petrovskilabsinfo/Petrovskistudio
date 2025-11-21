@@ -9,11 +9,11 @@ interface DonationBlockProps {
 const donationTexts = {
   en: {
     title: "Support PetrovskiStudio Development",
-    subtitle: "Help us bring better visual comfort to everyone",
-    description: "Your support helps us create new privacy‑first, accessibility‑focused tools at PetrovskiStudio.",
+    subtitle: "Help us bring a better future for everyone",
+    description: "Brave New World.",
     amounts: ["Buy me a coffee", "Support development", "Premium support", "Custom amount"],
     thankYou: "Thank you for your support! 💜",
-    thankYouMessage: "Your contribution helps make ColorAdapt better for everyone!",
+    thankYouMessage: "Thank you for your support",
     poweredBy: "Powered by PayPal",
     enterAmount: "Enter amount",
     donateButton: "Donate"
