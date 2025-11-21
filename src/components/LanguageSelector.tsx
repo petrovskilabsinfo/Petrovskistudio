@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useMemo, useCallback } from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Globe } from 'lucide-react';
 import { Language } from '../petrovskiStudioTranslations';
 
@@ -23,14 +23,14 @@ const languages = [
   { code: 'ko' as Language, name: '한국어', flag: '🇰🇷' },
 ];
 
-export const LanguageSelector: React.FC<LanguageSelectorProps> = React.memo(({
+export const LanguageSelector: React.FC<LanguageSelectorProps> = ({
   currentLanguage,
   onLanguageChange,
   isDark,
 }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  const currentLang = useMemo(() => languages.find(lang => lang.code === currentLanguage), [currentLanguage]);
+  const currentLang = languages.find(lang => lang.code === currentLanguage);
 
   // Закрытие выпадающего списка при клике вне компонента
   useEffect(() => {
@@ -46,16 +46,10 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = React.memo(({
     };
   }, []);
 
-  const handleToggle = useCallback(() => setIsOpen(prev => !prev), []);
-  const handleLanguageChange = useCallback((code: Language) => {
-    onLanguageChange(code);
-    setIsOpen(false);
-  }, [onLanguageChange]);
-
   return (
     <div className="relative" ref={dropdownRef}>
       <button
-        onClick={handleToggle}
+        onClick={() => setIsOpen(!isOpen)}
         className={`flex items-center space-x-2 px-3 py-2 rounded-xl ${
           isDark
             ? 'bg-slate-800/50 hover:bg-slate-700/50 border-purple-500/30 hover:border-purple-400/60 text-white'
@@ -84,7 +78,10 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = React.memo(({
           {languages.map((language) => (
             <button
               key={language.code}
-              onClick={() => handleLanguageChange(language.code)}
+              onClick={() => {
+                onLanguageChange(language.code);
+                setIsOpen(false);
+              }}
               className={`w-full flex items-center space-x-3 px-4 py-3 text-left ${
                 isDark ? 'hover:bg-slate-700/50' : 'hover:bg-purple-50/80'
               } transition-all duration-300 first:rounded-t-xl last:rounded-b-xl group min-h-[48px] ${
@@ -101,4 +98,4 @@ export const LanguageSelector: React.FC<LanguageSelectorProps> = React.memo(({
       )}
     </div>
   );
-});
+};
