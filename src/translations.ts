@@ -1,4 +1,4 @@
-export const petrovskiLabsTranslations = {
+export const petrovskiStudioTranslations = {
   en: {
     nav: {
       about: "About",
@@ -78,7 +78,7 @@ export const petrovskiLabsTranslations = {
         satisfaction: { value: "98%", label: "Client Satisfaction", icon: "Award" }
       },
       about: {
-        title: "About PetrovskiLabs",
+        title: "About PetrovskiStudio",
         description: "We are a forward-thinking development studio specializing in cutting-edge technology solutions. Our team combines technical expertise with creative innovation to deliver exceptional digital products.",
         tagline: "Transforming Ideas into Digital Reality"
       },
@@ -98,7 +98,7 @@ export const petrovskiLabsTranslations = {
     contact: {
       email: {
         title: "Email",
-        address: "petrovskilabsinfo@gmail.com",
+        address: "petrovskistudioinfo@gmail.com",
         description: "Send us an email for detailed discussions"
       },
       location: {
@@ -108,9 +108,9 @@ export const petrovskiLabsTranslations = {
       }
     },
     footer: {
-      title: "PetrovskiLabs",
+      title: "PetrovskiStudio",
       description: "Transforming innovative ideas into successful digital products. We're your trusted partner for startup development, custom software solutions, and cutting-edge R&D projects.",
-      copyright: "© 2025 PetrovskiLabs. All rights reserved.",
+      copyright: "© 2025 PetrovskiStudio. All rights reserved.",
       privacy: "Privacy Policy",
       terms: "Terms of Service",
       cookies: "Cookie Policy"
@@ -210,7 +210,7 @@ export const petrovskiLabsTranslations = {
         satisfaction: { value: "98%", label: "Удовлетворенность клиентов", icon: "Award" }
       },
       about: {
-        title: "О PetrovskiLabs",
+        title: "О PetrovskiStudio",
         description: "Мы — прогрессивная студия разработки, специализирующаяся на передовых технологических решениях. Наша команда сочетает техническую экспертизу с креативными инновациями для создания исключительных цифровых продуктов.",
         tagline: "Превращаем идеи в цифровую реальность"
       },
@@ -230,7 +230,7 @@ export const petrovskiLabsTranslations = {
     contact: {
       email: {
         title: "Email",
-        address: "petrovskilabsinfo@gmail.com",
+        address: "petrovskistudioinfo@gmail.com",
         description: "Отправьте нам email для детального обсуждения"
       },
       location: {
@@ -240,9 +240,9 @@ export const petrovskiLabsTranslations = {
       }
     },
     footer: {
-      title: "PetrovskiLabs",
+      title: "PetrovskiStudio",
       description: "Превращаем инновационные идеи в успешные цифровые продукты. Мы ваш надежный партнер в разработке стартапов, заказных программных решений и передовых R&D проектов.",
-      copyright: "© 2025 PetrovskiLabs. Все права защищены.",
+      copyright: "© 2025 PetrovskiStudio. Все права защищены.",
       privacy: "Политика конфиденциальности",
       terms: "Условия использования",
       cookies: "Политика cookies"
@@ -355,7 +355,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Excelencia Multiplataforma",
-        description: "Funciona perfectamente en Windows/macOS/Linux en todos los navegadores Chromium. Experimenta un nuevo estándar de comodidad, creado por Yuri Petrovski & PetrovskiLabs."
+        description: "Funciona perfectamente en Windows/macOS/Linux en todos los navegadores Chromium. Experimenta un nuevo estándar de comodidad, creado por Yuri Petrovski & PetrovskiStudio."
       }
     },
     privacy: {
@@ -384,7 +384,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Comodidad visual, accesibilidad y creatividad, todo en una extensión.",
-      copyright: "© 2025 PetrovskiLabs – Fundado por Yuri Petrovski"
+      copyright: "© 2025 PetrovskiStudio – Fundado por Yuri Petrovski"
     }
   },
   ru: {
@@ -479,7 +479,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Кроссплатформенное Совершенство",
-        description: "Безупречно работает в Windows/macOS/Linux во всех браузерах Chromium. Испытайте новый стандарт комфорта, созданный Юрием Петровским & PetrovskiLabs."
+        description: "Безупречно работает в Windows/macOS/Linux во всех браузерах Chromium. Испытайте новый стандарт комфорта, созданный Юрием Петровским & PetrovskiStudio."
       }
     },
     privacy: {
@@ -508,7 +508,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Визуальный комфорт, доступность и творчество — все в одном расширении.",
-      copyright: "© 2025 PetrovskiLabs – Основано Юрием Петровским"
+      copyright: "© 2025 PetrovskiStudio – Основано Юрием Петровским"
     }
   },
   ja: {
@@ -603,7 +603,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "クロスプラットフォームの卓越性",
-        description: "Windows/macOS/LinuxのすべてのChromiumブラウザで完璧に動作。ユーリ・ペトロフスキー & PetrovskiLabsによって作られた新しい快適性の標準を体験してください。"
+        description: "Windows/macOS/LinuxのすべてのChromiumブラウザで完璧に動作。ユーリ・ペトロフスキー & PetrovskiStudioによって作られた新しい快適性の標準を体験してください。"
       }
     },
     privacy: {
@@ -632,7 +632,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "視覚的快適性、アクセシビリティ、創造性 — すべてが一つの拡張機能に。",
-      copyright: "© 2025 PetrovskiLabs – ユーリ・ペトロフスキーによって設立"
+      copyright: "© 2025 PetrovskiStudio – ユーリ・ペトロフスキーによって設立"
     }
   },
   fr: {
@@ -727,7 +727,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Excellence Multi-Plateforme",
-        description: "Fonctionne parfaitement sur Windows/macOS/Linux dans tous les navigateurs Chromium. Découvrez un nouveau standard de confort, créé par Yuri Petrovski & PetrovskiLabs."
+        description: "Fonctionne parfaitement sur Windows/macOS/Linux dans tous les navigateurs Chromium. Découvrez un nouveau standard de confort, créé par Yuri Petrovski & PetrovskiStudio."
       }
     },
     privacy: {
@@ -756,7 +756,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Confort visuel, accessibilité et créativité — tout en une extension.",
-      copyright: "© 2025 PetrovskiLabs – Fondé par Yuri Petrovski"
+      copyright: "© 2025 PetrovskiStudio – Fondé par Yuri Petrovski"
     }
   },
   ar: {
@@ -851,7 +851,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "التميز عبر المنصات",
-        description: "يعمل بشكل مثالي على Windows/macOS/Linux في جميع متصفحات Chromium. اختبر معياراً جديداً للراحة، صُنع بواسطة يوري بتروفسكي & PetrovskiLabs."
+        description: "يعمل بشكل مثالي على Windows/macOS/Linux في جميع متصفحات Chromium. اختبر معياراً جديداً للراحة، صُنع بواسطة يوري بتروفسكي & PetrovskiStudio."
       }
     },
     privacy: {
@@ -880,7 +880,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "الراحة البصرية وإمكانية الوصول والإبداع — كل ذلك في إضافة واحدة.",
-      copyright: "© 2025 PetrovskiLabs – تأسست بواسطة يوري بتروفسكي"
+      copyright: "© 2025 PetrovskiStudio – تأسست بواسطة يوري بتروفسكي"
     }
   },
   hi: {
@@ -975,7 +975,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "क्रॉस-प्लेटफॉर्म उत्कृष्टता",
-        description: "Windows/macOS/Linux पर सभी Chromium ब्राउज़र में निर्दोष रूप से काम करता है। यूरी पेट्रोवस्की & PetrovskiLabs द्वारा तैयार आराम के नए मानक का अनुभव करें।"
+        description: "Windows/macOS/Linux पर सभी Chromium ब्राउज़र में निर्दोष रूप से काम करता है। यूरी पेट्रोवस्की & PetrovskiStudio द्वारा तैयार आराम के नए मानक का अनुभव करें।"
       }
     },
     privacy: {
@@ -1004,7 +1004,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "दृश्य आराम, पहुंच, और रचनात्मकता — सब एक एक्सटेंशन में।",
-      copyright: "© 2025 PetrovskiLabs – यूरी पेट्रोवस्की द्वारा स्थापित"
+      copyright: "© 2025 PetrovskiStudio – यूरी पेट्रोवस्की द्वारा स्थापित"
     }
   },
   de: {
@@ -1099,7 +1099,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Plattformübergreifende Exzellenz",
-        description: "Funktioniert einwandfrei auf Windows/macOS/Linux in allen Chromium-Browsern. Erleben Sie einen neuen Standard des Komforts, geschaffen von Yuri Petrovski & PetrovskiLabs."
+        description: "Funktioniert einwandfrei auf Windows/macOS/Linux in allen Chromium-Browsern. Erleben Sie einen neuen Standard des Komforts, geschaffen von Yuri Petrovski & PetrovskiStudio."
       }
     },
     privacy: {
@@ -1128,7 +1128,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Visueller Komfort, Barrierefreiheit und Kreativität — alles in einer Erweiterung.",
-      copyright: "© 2025 PetrovskiLabs – Gegründet von Yuri Petrovski"
+      copyright: "© 2025 PetrovskiStudio – Gegründet von Yuri Petrovski"
     }
   },
   it: {
@@ -1223,7 +1223,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Eccellenza Cross-Platform",
-        description: "Funziona perfettamente su Windows/macOS/Linux in tutti i browser Chromium. Sperimenta un nuovo standard di comfort, creato da Yuri Petrovski & PetrovskiLabs."
+        description: "Funziona perfettamente su Windows/macOS/Linux in tutti i browser Chromium. Sperimenta un nuovo standard di comfort, creato da Yuri Petrovski & PetrovskiStudio."
       }
     },
     privacy: {
@@ -1252,7 +1252,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Comfort visivo, accessibilità e creatività — tutto in un'estensione.",
-      copyright: "© 2025 PetrovskiLabs – Fondato da Yuri Petrovski"
+      copyright: "© 2025 PetrovskiStudio – Fondato da Yuri Petrovski"
     }
   },
   zh: {
@@ -1347,7 +1347,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "跨平台卓越",
-        description: "在Windows/macOS/Linux的所有Chromium浏览器中完美运行。体验由Yuri Petrovski & PetrovskiLabs打造的全新舒适标准。"
+        description: "在Windows/macOS/Linux的所有Chromium浏览器中完美运行。体验由Yuri Petrovski & PetrovskiStudio打造的全新舒适标准。"
       }
     },
     privacy: {
@@ -1376,7 +1376,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "视觉舒适、无障碍和创造力 — 一个扩展全搞定。",
-      copyright: "© 2025 PetrovskiLabs – 由 Yuri Petrovski 创立"
+      copyright: "© 2025 PetrovskiStudio – 由 Yuri Petrovski 创立"
     }
   },
   tr: {
@@ -1471,7 +1471,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "Çapraz Platform Mükemmelliği",
-        description: "Windows/macOS/Linux'taki tüm Chromium tarayıcılarda kusursuz çalışır. Yuri Petrovski & PetrovskiLabs tarafından yaratılan yeni bir konfor standardını deneyimleyin."
+        description: "Windows/macOS/Linux'taki tüm Chromium tarayıcılarda kusursuz çalışır. Yuri Petrovski & PetrovskiStudio tarafından yaratılan yeni bir konfor standardını deneyimleyin."
       }
     },
     privacy: {
@@ -1500,7 +1500,7 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "Görsel konfor, erişilebilirlik ve yaratıcılık — hepsi tek uzantıda.",
-      copyright: "© 2025 PetrovskiLabs – Yuri Petrovski tarafından kuruldu"
+      copyright: "© 2025 PetrovskiStudio – Yuri Petrovski tarafından kuruldu"
     }
   },
   ko: {
@@ -1595,7 +1595,7 @@ export const petrovskiLabsTranslations = {
       },
       crossPlatform: {
         title: "크로스 플랫폼 우수성",
-        description: "Windows/macOS/Linux의 모든 Chromium 브라우저에서 완벽하게 작동합니다. Yuri Petrovski & PetrovskiLabs가 만든 새로운 편안함의 표준을 경험하세요."
+        description: "Windows/macOS/Linux의 모든 Chromium 브라우저에서 완벽하게 작동합니다. Yuri Petrovski & PetrovskiStudio가 만든 새로운 편안함의 표준을 경험하세요."
       }
     },
     privacy: {
@@ -1624,10 +1624,10 @@ export const petrovskiLabsTranslations = {
     footer: {
       title: "ColorAdapt",
       description: "시각적 편안함, 접근성, 창의성 — 모든 것이 하나의 확장 프로그램에.",
-      copyright: "© 2025 PetrovskiLabs – Yuri Petrovski가 설립"
+      copyright: "© 2025 PetrovskiStudio – Yuri Petrovski가 설립"
     }
   }
 };
 
-export type Language = keyof typeof translations;
-export type TranslationKey = keyof typeof translations.en;
+export type Language = keyof typeof petrovskiStudioTranslations;
+export type TranslationKey = keyof typeof petrovskiStudioTranslations.en;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Shield, Eye, Zap, Globe, Lightbulb, Heart, type LucideIcon } from 'lucide-react';
-import { petrovskiLabsTranslations, type Language } from '../petrovskiLabsTranslations';
+import { petrovskiStudioTranslations, type Language } from '../petrovskiStudioTranslations';
 
 interface PrivacyPolicySectionProps {
   isDark: boolean;
@@ -34,8 +34,8 @@ interface PolicyContent {
 }
 
 export const PrivacyPolicySection: React.FC<PrivacyPolicySectionProps> = ({ isDark, currentLanguage }) => {
-  const t = petrovskiLabsTranslations[currentLanguage] || petrovskiLabsTranslations.en;
-  const policy = (("privacyPolicy" in t ? t.privacyPolicy : undefined) ?? petrovskiLabsTranslations.en.privacyPolicy) as PolicyContent;
+  const t = petrovskiStudioTranslations[currentLanguage] || petrovskiStudioTranslations.en;
+  const policy = (("privacyPolicy" in t ? t.privacyPolicy : undefined) ?? petrovskiStudioTranslations.en.privacyPolicy) as PolicyContent;
 
   const sceneBg = isDark ? '#03050c' : '#f4f1ff';
   const wrapperBorder = isDark ? 'border-white/10' : 'border-purple-100/80';

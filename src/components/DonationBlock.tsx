@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo, useCallback } from 'react';
 import { Heart, Coffee, Zap, Star, Gift } from 'lucide-react';
 
 interface DonationBlockProps {
@@ -8,9 +8,9 @@ interface DonationBlockProps {
 
 const donationTexts = {
   en: {
-    title: "Support PetrovskiLabs Development",
+    title: "Support PetrovskiStudio Development",
     subtitle: "Help us bring better visual comfort to everyone",
-    description: "Your support helps us create new privacy‑first, accessibility‑focused tools at PetrovskiLabs.",
+    description: "Your support helps us create new privacy‑first, accessibility‑focused tools at PetrovskiStudio.",
     amounts: ["Buy me a coffee", "Support development", "Premium support", "Custom amount"],
     thankYou: "Thank you for your support! 💜",
     thankYouMessage: "Your contribution helps make ColorAdapt better for everyone!",
@@ -141,21 +141,21 @@ const donationTexts = {
   }
 };
 
-export const DonationBlock: React.FC<DonationBlockProps> = ({ isDark, currentLanguage }) => {
+export const DonationBlock: React.FC<DonationBlockProps> = React.memo(({ isDark, currentLanguage }) => {
   const [selectedAmount, setSelectedAmount] = useState<number | null>(null);
   const [customAmount, setCustomAmount] = useState('');
   const [showThankYou, setShowThankYou] = useState(false);
 
-  const t = donationTexts[currentLanguage as keyof typeof donationTexts] || donationTexts.en;
+  const t = useMemo(() => donationTexts[currentLanguage as keyof typeof donationTexts] || donationTexts.en, [currentLanguage]);
   
-  const predefinedAmounts = [
+  const predefinedAmounts = useMemo(() => [
     { amount: 3, icon: Coffee, label: t.amounts[0], color: 'from-amber-500 to-orange-500' },
     { amount: 10, icon: Heart, label: t.amounts[1], color: 'from-pink-500 to-red-500' },
     { amount: 25, icon: Star, label: t.amounts[2], color: 'from-purple-500 to-indigo-500' },
     { amount: 0, icon: Gift, label: t.amounts[3], color: 'from-green-500 to-emerald-500' }
-  ];
+  ], [t]);
 
-  const themeClasses = {
+  const themeClasses = useMemo(() => ({
     background: isDark ? 'bg-slate-800/30' : 'bg-white/70',
     border: isDark ? 'border-purple-500/30' : 'border-purple-300/40',
     text: isDark ? 'text-white' : 'text-gray-900',
@@ -165,9 +165,9 @@ export const DonationBlock: React.FC<DonationBlockProps> = ({ isDark, currentLan
     cardHover: isDark ? 'hover:bg-slate-600/50' : 'hover:bg-purple-50/80',
     inputBg: isDark ? 'bg-slate-700/50' : 'bg-white/90',
     inputBorder: isDark ? 'border-slate-600' : 'border-purple-200'
-  };
+  }), [isDark]);
 
-  const handleDonate = (amount: number) => {
+  const handleDonate = useCallback((amount: number) => {
     const finalAmount = amount === 0 ? parseFloat(customAmount) || 5 : amount;
     
     // PayPal donation URL using email address
@@ -179,7 +179,7 @@ export const DonationBlock: React.FC<DonationBlockProps> = ({ isDark, currentLan
     
     // Open PayPal donation page
     window.open(paypalUrl, '_blank');
-  };
+  }, [customAmount]);
 
   if (showThankYou) {
     return (
@@ -308,4 +308,4 @@ export const DonationBlock: React.FC<DonationBlockProps> = ({ isDark, currentLan
       </div>
     </div>
   );
-};
+});

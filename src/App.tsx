@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo, useCallback } from 'react';
 import { ChevronDown, Shield, Eye, Palette, Zap, Globe, Heart, Download, Play, ArrowRight, Monitor, Mail, MapPin, Rocket, Code, Lightbulb, Users, TrendingUp, Award } from 'lucide-react';
-import { petrovskiLabsTranslations, Language } from './petrovskiLabsTranslations';
+import { petrovskiStudioTranslations, Language } from './petrovskiStudioTranslations';
 import { LanguageSelector } from './components/LanguageSelector';
 import { ThemeToggle } from './components/ThemeToggle';
 import { DonationBlock } from './components/DonationBlock';
@@ -10,20 +10,20 @@ function App() {
   const [currentLanguage, setCurrentLanguage] = useState<Language>('en');
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
-  const t = petrovskiLabsTranslations[currentLanguage];
+  const t = useMemo(() => petrovskiStudioTranslations[currentLanguage], [currentLanguage]);
 
   useEffect(() => {
     setIsVisible(true);
   }, []);
 
-  const scrollToSection = (sectionId: string) => {
+  const scrollToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
-  };
+  }, []);
 
-  const themeClasses = {
+  const themeClasses = useMemo(() => ({
     background: isDarkTheme 
       ? 'bg-[#141414]' 
       : 'bg-gradient-to-br from-gray-50 via-purple-50 to-gray-50',
@@ -42,7 +42,7 @@ function App() {
     particleColor: isDarkTheme ? 'bg-cyan-400' : 'bg-purple-500',
     mouseFollower: isDarkTheme ? 'from-purple-500 to-cyan-500' : 'from-purple-600 to-pink-500',
     footerBorder: isDarkTheme ? 'border-purple-500/20' : 'border-purple-300/30'
-  };
+  }), [isDarkTheme]);
 
   return (
     <div className={`min-h-screen ${themeClasses.background} ${themeClasses.text} relative overflow-hidden transition-all duration-700`}>
@@ -63,18 +63,27 @@ function App() {
         ></div>
         
         {/* Floating Particles */}
-        {[...Array(20)].map((_, i) => (
-          <div
-            key={i}
-            className={`absolute w-1 h-1 ${themeClasses.particleColor} rounded-full animate-ping`}
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              animationDelay: `${Math.random() * 3}s`,
-              animationDuration: `${2 + Math.random() * 2}s`
-            }}
-          ></div>
-        ))}
+        {useMemo(() => {
+          const particles = Array.from({ length: 12 }, (_, i) => ({
+            id: i,
+            left: Math.random() * 100,
+            top: Math.random() * 100,
+            delay: Math.random() * 3,
+            duration: 2 + Math.random() * 2
+          }));
+          return particles.map((particle) => (
+            <div
+              key={particle.id}
+              className={`absolute w-1 h-1 ${themeClasses.particleColor} rounded-full animate-ping`}
+              style={{
+                left: `${particle.left}%`,
+                top: `${particle.top}%`,
+                animationDelay: `${particle.delay}s`,
+                animationDuration: `${particle.duration}s`
+              }}
+            ></div>
+          ));
+        }, [themeClasses.particleColor])}
       </div>
 
       {/* Navigation */}
@@ -82,8 +91,8 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent cursor-pointer" onClick={() => scrollToSection('hero')}>
-              PetrovskiLabs
+            <div className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent cursor-pointer" onClick={useCallback(() => scrollToSection('hero'), [scrollToSection])}>
+              PetrovskiStudio
             </div>
 
             {/* Desktop Navigation */}
@@ -94,7 +103,7 @@ function App() {
                 onLanguageChange={setCurrentLanguage}
                 isDark={isDarkTheme}
               />
-              <ThemeToggle isDark={isDarkTheme} onToggle={() => setIsDarkTheme(!isDarkTheme)} />
+              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
 
               {/* Privacy Policy link */}
               <a
@@ -112,7 +121,7 @@ function App() {
                 onLanguageChange={setCurrentLanguage}
                 isDark={isDarkTheme}
               />
-              <ThemeToggle isDark={isDarkTheme} onToggle={() => setIsDarkTheme(!isDarkTheme)} />
+              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
               <button className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 transition-colors">
                 <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -146,7 +155,7 @@ function App() {
 
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-4">
             <a
-              href="mailto:petrovskilabsinfo@gmail.com"
+              href="mailto:petrovskistudioinfo@gmail.com"
               className="group relative px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-xl font-semibold text-lg text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/25 overflow-hidden inline-flex items-center"
             >
               <span className="relative z-10 flex items-center justify-center">
@@ -454,7 +463,7 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <p className={`${isDarkTheme ? 'text-gray-400' : 'text-gray-600'} text-sm`}>
-              © 2025 PetrovskiLabs – Founded by Yuri Petrovski
+              © 2025 PetrovskiStudio – Founded by Yuri Petrovski
             </p>
           </div>
         </div>

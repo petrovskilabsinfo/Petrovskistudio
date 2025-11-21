@@ -6,7 +6,7 @@ interface ThemeToggleProps {
   onToggle: () => void;
 }
 
-export const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDark, onToggle }) => {
+export const ThemeToggle: React.FC<ThemeToggleProps> = React.memo(({ isDark, onToggle }) => {
   return (
     <div className="relative group">
       <button
@@ -49,4 +49,4 @@ export const ThemeToggle: React.FC<ThemeToggleProps> = ({ isDark, onToggle }) =>
       </div>
     </div>
   );
-};
+});
