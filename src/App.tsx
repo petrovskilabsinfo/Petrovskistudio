@@ -463,7 +463,7 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <p className={`${isDarkTheme ? 'text-gray-400' : 'text-gray-600'} text-sm`}>
-              © 2025 PetrovskiStudio – Founded by Yuri Petrovski
+              © 2026 PetrovskiStudio – Founded by Yuri Petrovski
             </p>
           </div>
         </div>
