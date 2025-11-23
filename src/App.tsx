@@ -10,7 +10,13 @@ function App() {
   const [currentLanguage, setCurrentLanguage] = useState<Language>('en');
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
+  // Use translations based on selected language
   const t = useMemo(() => petrovskiStudioTranslations[currentLanguage] || petrovskiStudioTranslations.en, [currentLanguage]);
+  
+  // Update HTML lang attribute when language changes
+  useEffect(() => {
+    document.documentElement.lang = currentLanguage;
+  }, [currentLanguage]);
 
   useEffect(() => {
     setIsVisible(true);
@@ -88,44 +94,44 @@ function App() {
 
       {/* Navigation */}
       <nav className={`fixed top-0 w-full ${themeClasses.navBg} backdrop-blur-xl border-b ${themeClasses.navBorder} z-40 transition-all duration-700`}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <div className="font-bold text-xl sm:text-2xl bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent cursor-pointer" onClick={useCallback(() => scrollToSection('hero'), [scrollToSection])}>
+            <div className="font-bold text-lg sm:text-xl md:text-2xl bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent cursor-pointer truncate" onClick={useCallback(() => scrollToSection('hero'), [scrollToSection])}>
               PetrovskiStudio
             </div>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-4 xl:space-x-5">
-              {/* Controls */}
+            <div className="hidden lg:flex items-center space-x-6">
+              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
               <LanguageSelector
                 currentLanguage={currentLanguage}
                 onLanguageChange={setCurrentLanguage}
                 isDark={isDarkTheme}
               />
-              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
-
-              {/* Privacy Policy link */}
-              <a
-                href="#privacy"
-                className={`text-sm font-medium ${themeClasses.textSecondary} hover:${themeClasses.text} transition-colors duration-200`}
+              <button 
+                onClick={() => scrollToSection('privacy')}
+                className={`${themeClasses.textSecondary} hover:text-cyan-500 transition-all duration-300 font-medium relative group text-sm`}
               >
-                Privacy Policy
-              </a>
+                {t.privacy?.title || 'Privacy Policy'}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-cyan-400 to-cyan-500 group-hover:w-full transition-all duration-300"></span>
+              </button>
             </div>
 
-            {/* Mobile Navigation Button */}
+            {/* Mobile Navigation */}
             <div className="lg:hidden flex items-center space-x-2">
+              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
               <LanguageSelector
                 currentLanguage={currentLanguage}
                 onLanguageChange={setCurrentLanguage}
                 isDark={isDarkTheme}
               />
-              <ThemeToggle isDark={isDarkTheme} onToggle={useCallback(() => setIsDarkTheme(prev => !prev), [])} />
-              <button className="p-2 rounded-lg bg-slate-800/50 hover:bg-slate-700/50 transition-colors">
-                <svg className="w-5 h-5 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
+              <button 
+                onClick={() => scrollToSection('privacy')}
+                className={`p-2 rounded-lg ${isDarkTheme ? 'bg-slate-800/50 hover:bg-slate-700/50' : 'bg-white/70 hover:bg-white/90'} transition-colors`}
+                title={t.privacy?.title || 'Privacy Policy'}
+              >
+                <Shield className="w-5 h-5 text-cyan-400" />
               </button>
             </div>
           </div>
@@ -133,15 +139,15 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className={`min-h-screen flex items-center justify-center px-6 pt-16 relative z-10`}>
+      <section className={`min-h-screen flex items-center justify-center px-4 sm:px-6 pt-16 sm:pt-20 relative z-10`}>
         <div className={`max-w-6xl mx-auto text-center transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
           <div className="mb-4 sm:mb-6">
-            <span className={`inline-block px-4 py-2 sm:px-6 sm:py-2 rounded-full border ${isDarkTheme ? 'border-cyan-500/30 bg-cyan-500/10' : 'border-cyan-600/30 bg-cyan-600/10'} ${themeClasses.text} text-xs sm:text-sm font-medium mb-4 sm:mb-6`}>
+            <span className={`inline-block px-3 py-1.5 sm:px-4 sm:py-2 md:px-6 md:py-2 rounded-full border ${isDarkTheme ? 'border-cyan-500/30 bg-cyan-500/10' : 'border-cyan-600/30 bg-cyan-600/10'} ${themeClasses.text} text-xs sm:text-sm font-medium mb-4 sm:mb-6`}>
               {t.hero.badge}
             </span>
           </div>
 
-          <h1 className={`text-6xl md:text-8xl font-bold ${themeClasses.text} mb-6 leading-tight`}>
+          <h1 className={`text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold ${themeClasses.text} mb-4 sm:mb-6 leading-tight px-4`}>
             {t.hero.title}{' '}
             <span className="bg-gradient-to-r from-cyan-400 via-cyan-500 to-cyan-600 bg-clip-text text-transparent">
               {t.hero.titleHighlight}
@@ -149,13 +155,24 @@ function App() {
             {t.hero.subtitle}
           </h1>
 
-          <p className={`text-xl md:text-2xl ${themeClasses.textSecondary} mb-8 max-w-5xl mx-auto leading-relaxed`}>
+          <p className={`text-base sm:text-xl md:text-2xl ${themeClasses.textSecondary} mb-6 sm:mb-8 max-w-5xl mx-auto leading-relaxed px-4`}>
             {t.hero.description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-4">
+          {t.hero.quote && (
+            <div className={`max-w-5xl mx-auto mb-6 sm:mb-8 px-4`}>
+              <p className={`text-base sm:text-xl md:text-2xl ${themeClasses.textSecondary} leading-relaxed mb-4`}>
+                {t.hero.quote}
+              </p>
+              <p className={`text-base sm:text-lg md:text-xl ${isDarkTheme ? 'text-cyan-400' : 'text-cyan-600'} font-medium italic text-right`}>
+                — {t.hero.quoteAuthor}
+              </p>
+            </div>
+          )}
+
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-4 px-4">
             <a
-              href="mailto:petrovskistudioinfo@gmail.com"
+              href="mailto:petrovskilabsinfo@gmail.com"
               className="group relative px-10 py-5 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-xl font-semibold text-lg text-white transition-all duration-300 transform hover:scale-105 hover:shadow-2xl hover:shadow-cyan-400/25 overflow-hidden inline-flex items-center"
             >
               <span className="relative z-10 flex items-center justify-center">
@@ -169,9 +186,9 @@ function App() {
           <button
             type="button"
             onClick={useCallback(() => scrollToSection('projects'), [scrollToSection])}
-            className={`mt-4 mx-auto flex items-center gap-2 text-sm md:text-base ${themeClasses.textSecondary} hover:${themeClasses.text} transition-colors duration-200`}
+            className={`mt-4 mx-auto flex items-center gap-2 text-sm md:text-base ${themeClasses.textSecondary} ${isDarkTheme ? 'hover:text-white' : 'hover:text-gray-900'} transition-colors duration-200`}
           >
-            <span>Learn More</span>
+            <span>{t.hero.viewWork || 'Learn More'}</span>
             <ChevronDown className="w-4 h-4" />
           </button>
         </div>
@@ -184,13 +201,13 @@ function App() {
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className={`py-10 px-4 sm:px-6 relative z-10`}>
+      <section id="projects" className={`py-8 sm:py-12 md:py-16 px-4 sm:px-6 relative z-10`}>
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className={`text-4xl sm:text-5xl md:text-6xl font-bold ${themeClasses.text} mb-4 sm:mb-6`}>
+          <div className="text-center mb-8 sm:mb-10 md:mb-12">
+            <h2 className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold ${themeClasses.text} mb-3 sm:mb-4 md:mb-6 px-4`}>
               {t.projects.title}
             </h2>
-            <p className={`text-lg sm:text-xl ${themeClasses.textSecondary} max-w-4xl mx-auto leading-relaxed mb-6 sm:mb-8 px-4`}>
+            <p className={`text-base sm:text-lg md:text-xl ${themeClasses.textSecondary} max-w-4xl mx-auto leading-relaxed mb-4 sm:mb-6 md:mb-8 px-4`}>
               {t.projects.subtitle}
             </p>
           </div>
@@ -211,7 +228,7 @@ function App() {
                     {t.projects.colorAdapt.description}
                   </p>
                   <div className="mb-4 sm:mb-5">
-                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.colorAdapt.technologies}</h4>
+                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
                     <div className="flex flex-wrap gap-2">
                       {t.projects.colorAdapt.techList.map((tech, index) => (
                         <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-cyan-300' : 'bg-cyan-50 text-cyan-700'} border ${isDarkTheme ? 'border-cyan-500/30' : 'border-cyan-200'}`}>
@@ -232,7 +249,7 @@ function App() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                   <a
-                    href="https://chrome.google.com/webstore/detail/coloradapt"
+                    href="https://chromewebstore.google.com/detail/coloradapt/mdhhbgaeadiphmhbjkfmjcfahcahcbkg"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-cyan-400/25"
@@ -261,7 +278,7 @@ function App() {
                     {t.projects.musicAdapt.description}
                   </p>
                   <div className="mb-4 sm:mb-5">
-                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.musicAdapt.technologies}</h4>
+                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
                     <div className="flex flex-wrap gap-2">
                       {t.projects.musicAdapt.techList.map((tech, index) => (
                         <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-indigo-300' : 'bg-indigo-50 text-indigo-700'} border ${isDarkTheme ? 'border-indigo-500/30' : 'border-indigo-200'}`}>
@@ -311,7 +328,7 @@ function App() {
                     {t.projects.matrixRain.description}
                   </p>
                   <div className="mb-4 sm:mb-5">
-                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.matrixRain.technologies}</h4>
+                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
                     <div className="flex flex-wrap gap-2">
                       {t.projects.matrixRain.techList.map((tech, index) => (
                         <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-emerald-300' : 'bg-emerald-50 text-emerald-700'} border ${isDarkTheme ? 'border-emerald-500/30' : 'border-emerald-200'}`}>
@@ -323,7 +340,7 @@ function App() {
                 </div>
                 <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
                   <a
-                    href="https://matrixrain.com/"
+                    href="https://petrovskistudio.com/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
@@ -361,7 +378,7 @@ function App() {
                     {t.projects.grayTrigger.description}
                   </p>
                   <div className="mb-4 sm:mb-5">
-                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.grayTrigger.technologies}</h4>
+                    <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
                     <div className="flex flex-wrap gap-2">
                       {t.projects.grayTrigger.techList.map((tech, index) => (
                         <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-gray-300' : 'bg-gray-50 text-gray-700'} border ${isDarkTheme ? 'border-gray-500/30' : 'border-gray-200'}`}>
@@ -382,7 +399,7 @@ function App() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                   <a
-                    href="https://chrome.google.com/webstore/detail/graytrigger"
+                    href="https://chromewebstore.google.com/detail/graytrigger/jgmjkhadhfclpekcojcihnkaoooepgeb"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-gray-400 to-slate-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-gray-400/25"
@@ -396,84 +413,36 @@ function App() {
           </div>
 
           {/* Privacy Policy Section */}
-          <section id="privacy" className={`py-16 px-6 relative z-10 ${currentLanguage === 'ar' ? 'rtl' : 'ltr'}`}>
+          <section id="privacy" className={`py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative z-10`}>
             <div className="max-w-5xl mx-auto">
-              <h2 className={`text-5xl font-bold text-center bg-gradient-to-r ${isDarkTheme ? 'from-purple-400 to-cyan-400' : 'from-purple-600 to-cyan-600'} bg-clip-text text-transparent mb-16`}>
-                Privacy Policy — Our Extensions
+              <h2 className={`text-3xl sm:text-4xl md:text-5xl font-bold text-center bg-gradient-to-r ${isDarkTheme ? 'from-cyan-400 to-cyan-500' : 'from-cyan-600 to-cyan-600'} bg-clip-text text-transparent mb-8 sm:mb-12 md:mb-16 px-4`}>
+                {t.privacy?.title || 'Privacy Policy'}
               </h2>
               
-              <div className={`relative p-10 rounded-3xl ${themeClasses.cardBg} border ${isDarkTheme ? 'border-purple-500/20' : 'border-purple-300/30'} backdrop-blur-sm`}>
-                <div className={`absolute inset-0 rounded-3xl ${isDarkTheme ? 'bg-gradient-to-br from-purple-500/5 to-cyan-500/5' : 'bg-gradient-to-br from-purple-100/50 to-cyan-100/50'}`}></div>
+              <div className={`relative p-6 sm:p-8 md:p-10 rounded-3xl ${themeClasses.cardBg} border ${isDarkTheme ? 'border-cyan-500/20' : 'border-cyan-300/30'} backdrop-blur-sm`}>
+                <div className={`absolute inset-0 rounded-3xl ${isDarkTheme ? 'bg-gradient-to-br from-cyan-500/5 to-blue-500/5' : 'bg-gradient-to-br from-cyan-100/50 to-blue-100/50'}`}></div>
                 <div className="relative z-10 space-y-8">
-                  <div className={`group flex items-start space-x-6 p-6 rounded-2xl hover:${isDarkTheme ? 'bg-slate-700/30' : 'bg-purple-50/50'} transition-all duration-300`}>
-                    <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                      <Shield className={`w-6 h-6 ${isDarkTheme ? 'text-purple-400' : 'text-purple-600'}`} />
+                  {[
+                    { icon: Shield, title: t.privacy?.points?.[0]?.title || "No Personal Data Collected", desc: t.privacy?.points?.[0]?.desc || "We do not collect, store, or transmit any personal information.", color: isDarkTheme ? 'text-cyan-400' : 'text-cyan-600' },
+                    { icon: Globe, title: t.privacy?.points?.[1]?.title || "Local‑First Design", desc: t.privacy?.points?.[1]?.desc || "All preferences and settings remain on your device. Our apps, extensions, and software run entirely in your browser or locally on your system.", color: isDarkTheme ? 'text-blue-400' : 'text-blue-600' },
+                    { icon: Zap, title: t.privacy?.points?.[2]?.title || "Permissions & Processing", desc: t.privacy?.points?.[2]?.desc || "Only the minimal permissions required to enable features are requested. In some cases, temporary processing may occur, but all data stays under your control.", color: isDarkTheme ? 'text-cyan-400' : 'text-cyan-600' },
+                    { icon: Heart, title: t.privacy?.points?.[3]?.title || "No Sharing", desc: t.privacy?.points?.[3]?.desc || "We do not sell, share, or transfer any data to third parties.", color: isDarkTheme ? 'text-green-400' : 'text-green-600' },
+                    { icon: Eye, title: t.privacy?.points?.[4]?.title || "Full Control", desc: t.privacy?.points?.[4]?.desc || "You remain in control at all times. Removing apps, extensions, software, or clearing storage deletes all related data.", color: isDarkTheme ? 'text-yellow-400' : 'text-yellow-600' }
+                  ].map((item, index) => (
+                    <div key={index} className={`group flex items-start space-x-6 p-6 rounded-2xl ${isDarkTheme ? 'hover:bg-slate-700/30' : 'hover:bg-cyan-50/50'} transition-all duration-300`}>
+                      <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
+                        <item.icon className={`w-6 h-6 ${item.color}`} />
+                      </div>
+                      <div>
+                        <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 ${isDarkTheme ? 'group-hover:text-cyan-300' : 'group-hover:text-cyan-600'} transition-colors duration-300`}>
+                          {item.title}
+                        </h3>
+                        <p className={`${themeClasses.textSecondary} leading-relaxed ${isDarkTheme ? 'group-hover:text-gray-200' : 'group-hover:text-gray-700'} transition-colors duration-300`}>
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
-                    <div>
-                      <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 group-hover:${isDarkTheme ? 'text-purple-300' : 'text-purple-600'} transition-colors duration-300`}>
-                        No Personal Data Collected
-                      </h3>
-                      <p className={`${themeClasses.textSecondary} leading-relaxed group-hover:${isDarkTheme ? 'text-gray-200' : 'text-gray-700'} transition-colors duration-300`}>
-                        We do not collect, store, or transmit any personal information.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className={`group flex items-start space-x-6 p-6 rounded-2xl hover:${isDarkTheme ? 'bg-slate-700/30' : 'bg-purple-50/50'} transition-all duration-300`}>
-                    <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                      <Globe className={`w-6 h-6 ${isDarkTheme ? 'text-blue-400' : 'text-blue-600'}`} />
-                    </div>
-                    <div>
-                      <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 group-hover:${isDarkTheme ? 'text-purple-300' : 'text-purple-600'} transition-colors duration-300`}>
-                        Local‑First Design
-                      </h3>
-                      <p className={`${themeClasses.textSecondary} leading-relaxed group-hover:${isDarkTheme ? 'text-gray-200' : 'text-gray-700'} transition-colors duration-300`}>
-                        All preferences and settings remain on your device. Our apps run entirely in your browser or locally on your system.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className={`group flex items-start space-x-6 p-6 rounded-2xl hover:${isDarkTheme ? 'bg-slate-700/30' : 'bg-purple-50/50'} transition-all duration-300`}>
-                    <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                      <Zap className={`w-6 h-6 ${isDarkTheme ? 'text-cyan-400' : 'text-cyan-600'}`} />
-                    </div>
-                    <div>
-                      <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 group-hover:${isDarkTheme ? 'text-purple-300' : 'text-purple-600'} transition-colors duration-300`}>
-                        Permissions & Processing
-                      </h3>
-                      <p className={`${themeClasses.textSecondary} leading-relaxed group-hover:${isDarkTheme ? 'text-gray-200' : 'text-gray-700'} transition-colors duration-300`}>
-                        Only the minimal access required to enable features is requested. In some cases, temporary processing may occur, but all data stays under your control.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className={`group flex items-start space-x-6 p-6 rounded-2xl hover:${isDarkTheme ? 'bg-slate-700/30' : 'bg-purple-50/50'} transition-all duration-300`}>
-                    <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                      <Heart className={`w-6 h-6 ${isDarkTheme ? 'text-green-400' : 'text-green-600'}`} />
-                    </div>
-                    <div>
-                      <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 group-hover:${isDarkTheme ? 'text-purple-300' : 'text-purple-600'} transition-colors duration-300`}>
-                        No Sharing
-                      </h3>
-                      <p className={`${themeClasses.textSecondary} leading-relaxed group-hover:${isDarkTheme ? 'text-gray-200' : 'text-gray-700'} transition-colors duration-300`}>
-                        We do not sell, share, or transfer any data to third parties.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className={`group flex items-start space-x-6 p-6 rounded-2xl hover:${isDarkTheme ? 'bg-slate-700/30' : 'bg-purple-50/50'} transition-all duration-300`}>
-                    <div className={`w-12 h-12 rounded-xl ${isDarkTheme ? 'bg-slate-700/50' : 'bg-white/80'} flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-300`}>
-                      <Eye className={`w-6 h-6 ${isDarkTheme ? 'text-yellow-400' : 'text-yellow-600'}`} />
-                    </div>
-                    <div>
-                      <h3 className={`font-bold text-xl ${themeClasses.text} mb-3 group-hover:${isDarkTheme ? 'text-purple-300' : 'text-purple-600'} transition-colors duration-300`}>
-                        Full Control
-                      </h3>
-                      <p className={`${themeClasses.textSecondary} leading-relaxed group-hover:${isDarkTheme ? 'text-gray-200' : 'text-gray-700'} transition-colors duration-300`}>
-                        You remain in control at all times. Removing the app or clearing storage deletes all related data.
-                      </p>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>
@@ -482,7 +451,11 @@ function App() {
       </section>
 
       {/* Donation Section */}
-      <DonationBlock isDark={isDarkTheme} currentLanguage={currentLanguage} />
+      <section className={`py-16 sm:py-24 md:py-32 px-4 sm:px-6 relative z-10`}>
+        <div className="max-w-4xl mx-auto">
+          <DonationBlock isDark={isDarkTheme} currentLanguage={currentLanguage} />
+        </div>
+      </section>
 
       {/* Footer */}
       <footer className={`py-8 px-6 border-t ${themeClasses.footerBorder} relative z-10`}>
