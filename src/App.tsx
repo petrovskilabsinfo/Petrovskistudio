@@ -302,7 +302,7 @@ function App() {
                   </div>
                   <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
                     <a
-                      href="https://www.petrovskistudio.com/"
+                      href="https://chromewebstore.google.com/detail/soundadapt/dcmjdbbdefhimbocfdohphldoecbkgdc"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-teal-500/25"
@@ -311,7 +311,7 @@ function App() {
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </a>
                     <a
-                      href="https://www.petrovskistudio.com/"
+                      href="https://chromewebstore.google.com/detail/soundadapt/dcmjdbbdefhimbocfdohphldoecbkgdc"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-teal-400 to-cyan-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-teal-400/25"
@@ -403,7 +403,7 @@ function App() {
                 </div>
                 <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
                   <a
-                    href="https://www.petrovskistudio.com/"
+                    href="https://chromewebstore.google.com/detail/cryptoforecaster/cpehggjifaiknhelidkifmkhfplpilaf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-amber-400 to-orange-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-amber-400/25"
@@ -412,7 +412,7 @@ function App() {
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </a>
                   <a
-                    href="https://www.petrovskistudio.com/"
+                    href="https://chromewebstore.google.com/detail/cryptoforecaster/cpehggjifaiknhelidkifmkhfplpilaf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-amber-400 to-orange-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-amber-400/25"
@@ -453,7 +453,7 @@ function App() {
                 </div>
                 <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
                   <a
-                    href="https://petrovskistudio.com/"
+                    href="https://chromewebstore.google.com/detail/matrixrain/eonkedgpffaaigppalmjhpdhomehgdfb"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-emerald-500 to-teal-600 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
