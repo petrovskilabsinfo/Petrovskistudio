@@ -17,8 +17,15 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html')
       },
       output: {
-        manualChunks: {
-          vendor: ['react', 'react-dom', 'react-router-dom'],
+        manualChunks(id) {
+          if (id.includes('node_modules')) {
+            if (id.includes('react-router-dom') || id.includes('react-router')) {
+              return 'router';
+            }
+            if (id.includes('react-dom') || id.includes('react')) {
+              return 'vendor';
+            }
+          }
         },
       },
     },
