@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo, useCallback } from 'react';
+import { useEffect, useState, useMemo, useCallback } from 'react';
 import { ChevronDown, Shield, Eye, Zap, Globe, Heart, Download, ArrowRight } from 'lucide-react';
 import { petrovskiStudioTranslations, cryptoForecasterTranslations, Language } from './petrovskiStudioTranslations';
 import { LanguageSelector } from './components/LanguageSelector';
@@ -54,13 +54,15 @@ function App() {
 
   const cryptoForecasterContent = useMemo(() => {
     const fallback = cryptoForecasterTranslations.en;
-    const copy = cryptoForecasterTranslations[currentLanguage] || fallback;
+    const copy = cryptoForecasterTranslations[currentLanguage] ?? fallback;
     return {
       ...copy,
       ctaPrimary: copy.visitWebsite,
       ctaSecondary: copy.downloadExtension
     };
   }, [currentLanguage]);
+
+  const fotoAdapt = t.projects.fotoAdapt;
 
   return (
     <div className={`min-h-screen ${themeClasses.background} ${themeClasses.text} relative overflow-hidden transition-all duration-700`}>
@@ -374,6 +376,58 @@ function App() {
               </div>
             </div>
           </div>
+
+          {/* FotoAdapt Project */}
+          {fotoAdapt && (
+            <div className={`relative p-6 sm:p-8 lg:p-10 rounded-3xl ${themeClasses.cardBg} border ${themeClasses.cardBorder} backdrop-blur-sm mb-6 mx-auto max-w-5xl`}>
+              <div className={`absolute inset-0 rounded-3xl ${isDarkTheme ? 'bg-gradient-to-br from-pink-500/5 to-rose-500/5' : 'bg-gradient-to-br from-pink-100/50 to-rose-100/50'}`}></div>
+              <div className="relative z-10">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-pink-400 to-rose-500 bg-clip-text text-transparent mb-2">
+                      {fotoAdapt.title}
+                    </h3>
+                    <p className={`text-lg sm:text-xl ${themeClasses.textSecondary} mb-3`}>
+                      {fotoAdapt.subtitle}
+                    </p>
+                    <p className={`${themeClasses.textSecondary} leading-relaxed mb-4 sm:mb-5 text-sm sm:text-base`}>
+                      {fotoAdapt.description}
+                    </p>
+                    <div className="mb-4 sm:mb-5">
+                      <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {fotoAdapt.techList.map((tech, index) => (
+                          <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-pink-300' : 'bg-pink-50 text-pink-700'} border ${isDarkTheme ? 'border-pink-500/30' : 'border-pink-200'}`}>
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
+                    <a
+                      href="https://chromewebstore.google.com/search/PetrovskiStudio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-pink-500 to-rose-600 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-500/25"
+                    >
+                      {fotoAdapt.visitWebsite}
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
+                    <a
+                      href="https://chromewebstore.google.com/search/PetrovskiStudio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-pink-400 to-rose-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-pink-400/25"
+                    >
+                      {fotoAdapt.downloadExtension}
+                      <Download className="w-4 h-4 ml-2" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           {/* CryptoForecaster Project */}
           <div className={`relative p-6 sm:p-8 lg:p-10 rounded-3xl ${themeClasses.cardBg} border ${themeClasses.cardBorder} backdrop-blur-sm mb-6 mx-auto max-w-5xl`}>

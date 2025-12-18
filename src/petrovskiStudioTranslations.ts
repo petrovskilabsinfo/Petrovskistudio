@@ -1,4 +1,4 @@
-export const petrovskiStudioTranslations = {
+const baseTranslations = {
   en: {
     nav: {
       about: "About",
@@ -59,6 +59,14 @@ export const petrovskiStudioTranslations = {
         subtitle: "Less screen, more hugs.",
           description: "Revolutionary productivity tool that automatically switches your screen to grayscale mode when you open sites like TikTok, Instagram, YouTube, X/Twitter, Facebook, etc. Helps reduce social media addiction through gentle visual cues without blocking or forcing.",
           techList: ["Productivity Tool", "Extension", "Helper", "Forcing", "Digital Wellness"],
+        visitWebsite: "Website",
+        downloadExtension: "Download"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Your photo studio online.",
+        description: "Transform your images with precision, creativity, and speed. Directly in your browser. Filters, color tools, background removal, crop, rotate, resize, and more — all in one intuitive interface.",
+        techList: ["Image Processing", "Photo Editing", "Filters", "Background Removal", "Browser-Based"],
         visitWebsite: "Website",
         downloadExtension: "Download"
       }
@@ -154,6 +162,14 @@ export const petrovskiStudioTranslations = {
         techList: ["Herramienta de Productividad", "Extensión", "Ayudante", "Forzar", "Bienestar Digital"],
         visitWebsite: "Sitio Web",
         downloadExtension: "Descargar"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Tu estudio fotográfico en línea.",
+        description: "Transforma tus imágenes con precisión, creatividad y velocidad. Directamente en tu navegador. Filtros, herramientas de color, eliminación de fondo, recorte, rotación, redimensionamiento y más — todo en una interfaz intuitiva.",
+        techList: ["Procesamiento de Imágenes", "Edición de Fotos", "Filtros", "Eliminación de Fondo", "Basado en Navegador"],
+        visitWebsite: "Sitio Web",
+        downloadExtension: "Descargar"
       }
     },
     privacy: {
@@ -245,6 +261,14 @@ export const petrovskiStudioTranslations = {
         subtitle: "少看屏幕，多拥抱。",
         description: "革命性的生产力工具，当您打开TikTok、Instagram、YouTube、X/Twitter、Facebook等网站时，自动将屏幕切换到灰度模式。通过温和的视觉提示帮助减少社交媒体成瘾，无需阻止或强制。",
         techList: ["生产力工具", "扩展", "助手", "强制", "数字健康"],
+        visitWebsite: "网站",
+        downloadExtension: "下载"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "您的在线摄影工作室。",
+        description: "以精确、创意和速度转换您的图像。直接在浏览器中。滤镜、颜色工具、背景移除、裁剪、旋转、调整大小等 — 全部在一个直观的界面中。",
+        techList: ["图像处理", "照片编辑", "滤镜", "背景移除", "基于浏览器"],
         visitWebsite: "网站",
         downloadExtension: "下载"
       }
@@ -340,6 +364,14 @@ export const petrovskiStudioTranslations = {
         techList: ["उत्पादकता उपकरण", "एक्सटेंशन", "सहायक", "मजबूर करना", "डिजिटल कल्याण"],
         visitWebsite: "वेबसाइट",
         downloadExtension: "डाउनलोड"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "आपका फोटो स्टूडियो ऑनलाइन।",
+        description: "सटीकता, रचनात्मकता और गति के साथ अपनी छवियों को रूपांतरित करें। सीधे अपने ब्राउज़र में। फ़िल्टर, रंग उपकरण, पृष्ठभूमि हटाना, क्रॉप, रोटेट, आकार बदलना और अधिक — सभी एक सहज इंटरफ़ेस में।",
+        techList: ["छवि प्रसंस्करण", "फोटो संपादन", "फ़िल्टर", "पृष्ठभूमि हटाना", "ब्राउज़र-आधारित"],
+        visitWebsite: "वेबसाइट",
+        downloadExtension: "डाउनलोड"
       }
     },
     privacy: {
@@ -431,6 +463,14 @@ export const petrovskiStudioTranslations = {
         subtitle: "شاشة أقل، عناق أكثر.",
         description: "أداة إنتاجية ثورية تقوم تلقائيًا بتحويل شاشتك إلى وضع التدرج الرمادي عند فتح مواقع مثل TikTok وInstagram وYouTube وX/Twitter وFacebook وما إلى ذلك. يساعد في تقليل إدمان وسائل التواصل الاجتماعي من خلال إشارات بصرية لطيفة دون حجب أو إجبار.",
         techList: ["أداة الإنتاجية", "الامتداد", "المساعد", "الإجبار", "العافية الرقمية"],
+        visitWebsite: "الموقع",
+        downloadExtension: "تحميل"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "استوديو التصوير الخاص بك على الإنترنت.",
+        description: "قم بتحويل صورك بدقة وإبداع وسرعة. مباشرة في متصفحك. المرشحات، أدوات الألوان، إزالة الخلفية، القص، الدوران، تغيير الحجم والمزيد — كل ذلك في واجهة بديهية واحدة.",
+        techList: ["معالجة الصور", "تحرير الصور", "المرشحات", "إزالة الخلفية", "قائم على المتصفح"],
         visitWebsite: "الموقع",
         downloadExtension: "تحميل"
       }
@@ -526,6 +566,14 @@ export const petrovskiStudioTranslations = {
         techList: ["Ferramenta de Produtividade", "Extensão", "Ajudante", "Forçar", "Bem-estar Digital"],
         visitWebsite: "Site",
         downloadExtension: "Baixar"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Seu estúdio fotográfico online.",
+        description: "Transforme suas imagens com precisão, criatividade e velocidade. Diretamente no seu navegador. Filtros, ferramentas de cor, remoção de fundo, corte, rotação, redimensionamento e mais — tudo em uma interface intuitiva.",
+        techList: ["Processamento de Imagens", "Edição de Fotos", "Filtros", "Remoção de Fundo", "Baseado em Navegador"],
+        visitWebsite: "Site",
+        downloadExtension: "Baixar"
       }
     },
     privacy: {
@@ -619,6 +667,14 @@ export const petrovskiStudioTranslations = {
         techList: ["Инструмент продуктивности", "Расширение", "Помощник", "Принуждение", "Цифровое благополучие"],
         visitWebsite: "Веб-сайт",
         downloadExtension: "Скачать"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Ваша фотостудия онлайн.",
+        description: "Преобразуйте свои изображения с точностью, творчеством и скоростью. Прямо в браузере. Фильтры, инструменты цвета, удаление фона, обрезка, поворот, изменение размера и многое другое — всё в одном интуитивном интерфейсе.",
+        techList: ["Обработка изображений", "Редактирование фото", "Фильтры", "Удаление фона", "Браузерный"],
+        visitWebsite: "Веб-сайт",
+        downloadExtension: "Скачать"
       }
     },
     privacy: {
@@ -710,6 +766,14 @@ const additionalTranslations = {
         techList: ["উত্পাদনশীলতা সরঞ্জাম", "এক্সটেনশন", "সহায়ক", "জোর করা", "ডিজিটাল সুস্থতা"],
         visitWebsite: "ওয়েবসাইট",
         downloadExtension: "ডাউনলোড"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "আপনার ফটো স্টুডিও অনলাইন।",
+        description: "নির্ভুলতা, সৃজনশীলতা এবং গতির সাথে আপনার ছবিগুলি রূপান্তর করুন। সরাসরি আপনার ব্রাউজারে। ফিল্টার, রঙ সরঞ্জাম, ব্যাকগ্রাউন্ড অপসারণ, ক্রপ, ঘুরানো, আকার পরিবর্তন এবং আরও অনেক কিছু — সবই একটি স্বজ্ঞাত ইন্টারফেসে।",
+        techList: ["ইমেজ প্রসেসিং", "ফটো এডিটিং", "ফিল্টার", "ব্যাকগ্রাউন্ড অপসারণ", "ব্রাউজার-ভিত্তিক"],
+        visitWebsite: "ওয়েবসাইট",
+        downloadExtension: "ডাউনলোড"
       }
     },
     privacy: {
@@ -778,6 +842,14 @@ const additionalTranslations = {
         subtitle: "画面を減らし、ハグを増やす。",
         description: "TikTok、Instagram、YouTube、X/Twitter、Facebookなどのサイトを開くと、自動的に画面をグレースケールモードに切り替える革命的な生産性ツール。ブロックや強制なしで、穏やかな視覚的合図を通じてソーシャルメディア依存を減らすのに役立ちます。",
         techList: ["生産性ツール", "拡張機能", "ヘルパー", "強制", "デジタルウェルネス"],
+        visitWebsite: "ウェブサイト",
+        downloadExtension: "ダウンロード"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "オンラインのフォトスタジオ。",
+        description: "精度、創造性、速度で画像を変換します。ブラウザで直接。フィルター、カラーツール、背景削除、クロップ、回転、リサイズなど — すべてが1つの直感的なインターフェースに。",
+        techList: ["画像処理", "写真編集", "フィルター", "背景削除", "ブラウザベース"],
         visitWebsite: "ウェブサイト",
         downloadExtension: "ダウンロード"
       }
@@ -850,6 +922,14 @@ const additionalTranslations = {
         techList: ["Produktivitätstool", "Erweiterung", "Helfer", "Zwang", "Digitale Gesundheit"],
         visitWebsite: "Website",
         downloadExtension: "Herunterladen"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Ihr Fotostudio online.",
+        description: "Transformieren Sie Ihre Bilder mit Präzision, Kreativität und Geschwindigkeit. Direkt in Ihrem Browser. Filter, Farbtools, Hintergrundentfernung, Zuschneiden, Drehen, Größenänderung und mehr — alles in einer intuitiven Benutzeroberfläche.",
+        techList: ["Bildverarbeitung", "Foto-Bearbeitung", "Filter", "Hintergrundentfernung", "Browser-basiert"],
+        visitWebsite: "Website",
+        downloadExtension: "Herunterladen"
       }
     },
     privacy: {
@@ -918,6 +998,14 @@ const additionalTranslations = {
         subtitle: "더 적은 화면, 더 많은 포옹.",
         description: "TikTok, Instagram, YouTube, X/Twitter, Facebook 등의 사이트를 열 때 화면을 자동으로 그레이스케일 모드로 전환하는 혁신적인 생산성 도구. 차단하거나 강제하지 않고 부드러운 시각적 신호를 통해 소셜 미디어 중독을 줄이는 데 도움이 됩니다.",
         techList: ["생산성 도구", "확장 프로그램", "헬퍼", "강제", "디지털 웰니스"],
+        visitWebsite: "웹사이트",
+        downloadExtension: "다운로드"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "온라인 사진 스튜디오.",
+        description: "정밀도, 창의성 및 속도로 이미지를 변환하세요. 브라우저에서 직접. 필터, 색상 도구, 배경 제거, 자르기, 회전, 크기 조정 등 — 모두 하나의 직관적인 인터페이스에 있습니다.",
+        techList: ["이미지 처리", "사진 편집", "필터", "배경 제거", "브라우저 기반"],
         visitWebsite: "웹사이트",
         downloadExtension: "다운로드"
       }
@@ -990,6 +1078,14 @@ const additionalTranslations = {
         techList: ["Outil de productivité", "Extension", "Assistant", "Forcer", "Bien-être numérique"],
         visitWebsite: "Site web",
         downloadExtension: "Télécharger"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Votre studio photo en ligne.",
+        description: "Transformez vos images avec précision, créativité et rapidité. Directement dans votre navigateur. Filtres, outils de couleur, suppression d'arrière-plan, recadrage, rotation, redimensionnement et plus encore — le tout dans une interface intuitive.",
+        techList: ["Traitement d'images", "Édition de photos", "Filtres", "Suppression d'arrière-plan", "Basé sur navigateur"],
+        visitWebsite: "Site web",
+        downloadExtension: "Télécharger"
       }
     },
     privacy: {
@@ -1006,8 +1102,9 @@ const additionalTranslations = {
   }
 };
 
-// Merge all translations
-Object.assign(petrovskiStudioTranslations, additionalTranslations);
+// --- NOTE ---
+// This file used to mutate `petrovskiStudioTranslations` via Object.assign.
+// We now export a merged constant (see bottom) to keep types accurate.
 
 // Add remaining languages with full translations
 const remainingTranslations = {
@@ -1065,6 +1162,14 @@ const remainingTranslations = {
         subtitle: "ਕਮ ਸਕ੍ਰੀਨ, ਵਧੇਰੇ ਆਲਿੰਗਨ।",
         description: "ਕ੍ਰਾਂਤੀਕਾਰੀ ਉਤਪਾਦਕਤਾ ਸੰਦ ਜੋ TikTok, Instagram, YouTube, X/Twitter, Facebook ਆਦਿ ਵਰਗੀਆਂ ਸਾਈਟਾਂ ਖੋਲ੍ਹਣ 'ਤੇ ਸਵੈਚਾਲਿਤ ਤੌਰ 'ਤੇ ਤੁਹਾਡੀ ਸਕ੍ਰੀਨ ਨੂੰ ਗ੍ਰੇਸਕੇਲ ਮੋਡ ਵਿੱਚ ਬਦਲਦਾ ਹੈ। ਬਲਾਕ ਜਾਂ ਮਜਬੂਰੀ ਤੋਂ ਬਿਨਾਂ ਨਰਮ ਵਿਜ਼ੂਅਲ ਸੰਕੇਤਾਂ ਦੁਆਰਾ ਸੋਸ਼ਲ ਮੀਡੀਆ ਦੀ ਆਦਤ ਨੂੰ ਘਟਾਉਣ ਵਿੱਚ ਮਦਦ ਕਰਦਾ ਹੈ।",
         techList: ["ਉਤਪਾਦਕਤਾ ਸੰਦ", "ਐਕਸਟੈਨਸ਼ਨ", "ਸਹਾਇਕ", "ਮਜਬੂਰੀ", "ਡਿਜੀਟਲ ਸਿਹਤ"],
+        visitWebsite: "ਵੈਬਸਾਈਟ",
+        downloadExtension: "ਡਾਊਨਲੋਡ"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "ਤੁਹਾਡਾ ਫੋਟੋ ਸਟੂਡੀਓ ਔਨਲਾਈਨ।",
+        description: "ਸੂਖਮਤਾ, ਰਚਨਾਤਮਕਤਾ ਅਤੇ ਗਤੀ ਨਾਲ ਆਪਣੀਆਂ ਤਸਵੀਰਾਂ ਨੂੰ ਬਦਲੋ। ਸਿੱਧੇ ਤੁਹਾਡੇ ਬ੍ਰਾਊਜ਼ਰ ਵਿੱਚ। ਫਿਲਟਰ, ਰੰਗ ਸਾਧਨ, ਪਿਛੋਕੜ ਹਟਾਉਣਾ, ਕ੍ਰਾਪ, ਘੁੰਮਾਉਣਾ, ਆਕਾਰ ਬਦਲਣਾ ਅਤੇ ਹੋਰ ਬਹੁਤ ਕੁਝ — ਸਭ ਇੱਕ ਸਹਿਜ ਇੰਟਰਫੇਸ ਵਿੱਚ।",
+        techList: ["ਚਿੱਤਰ ਪ੍ਰਕਿਰਿਆ", "ਫੋਟੋ ਸੰਪਾਦਨ", "ਫਿਲਟਰ", "ਪਿਛੋਕੜ ਹਟਾਉਣਾ", "ਬ੍ਰਾਊਜ਼ਰ-ਆਧਾਰਿਤ"],
         visitWebsite: "ਵੈਬਸਾਈਟ",
         downloadExtension: "ਡਾਊਨਲੋਡ"
       }
@@ -1137,6 +1242,14 @@ const remainingTranslations = {
         techList: ["Piranti Produktivitas", "Ekstensi", "Helper", "Meksa", "Kesejahteraan Digital"],
         visitWebsite: "Situs Web",
         downloadExtension: "Unduh"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Studio foto sampeyan online.",
+        description: "Ubah gambar sampeyan kanthi presisi, kreativitas, lan kacepetan. Langsung ing browser sampeyan. Filter, piranti warna, mbusak latar mburi, potong, muter, ukuran, lan liya-liyane — kabeh ing siji antarmuka intuitif.",
+        techList: ["Pangolahan Gambar", "Sunting Foto", "Filter", "Mbusak Latar Mburi", "Basis Browser"],
+        visitWebsite: "Situs Web",
+        downloadExtension: "Unduh"
       }
     },
     privacy: {
@@ -1205,6 +1318,14 @@ const remainingTranslations = {
         subtitle: "తక్కువ స్క్రీన్, ఎక్కువ గౌరవం.",
         description: "TikTok, Instagram, YouTube, X/Twitter, Facebook వంటి సైట్‌లను తెరిచినప్పుడు మీ స్క్రీన్‌ను స్వయంచాలకంగా గ్రేస్కేల్ మోడ్‌కు మార్చే విప్లవాత్మక ఉత్పాదకత సాధనం. నిరోధించకుండా లేదా బలవంతం చేయకుండా మృదువైన దృశ్య సంకేతాల ద్వారా సోషల్ మీడియా వ్యసనాన్ని తగ్గించడంలో సహాయపడుతుంది.",
         techList: ["ఉత్పాదకత సాధనం", "పొడిగింపు", "సహాయకుడు", "బలవంతం", "డిజిటల్ క్షేమం"],
+        visitWebsite: "వెబ్‌సైట్",
+        downloadExtension: "డౌన్‌లోడ్"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "మీ ఆన్‌లైన్ ఫోటో స్టూడియో.",
+        description: "సూక్ష్మత, సృజనాత్మకత మరియు వేగంతో మీ చిత్రాలను రూపాంతరం చేయండి. మీ బ్రౌజర్‌లో నేరుగా. ఫిల్టర్‌లు, రంగు సాధనాలు, నేపథ్యం తొలగింపు, క్రాప్, తిప్పడం, పరిమాణం మార్చడం మరియు మరిన్ని — అన్నీ ఒక సహజమైన ఇంటర్‌ఫేస్‌లో.",
+        techList: ["చిత్ర ప్రాసెసింగ్", "ఫోటో ఎడిటింగ్", "ఫిల్టర్‌లు", "నేపథ్యం తొలగింపు", "బ్రౌజర్-ఆధారిత"],
         visitWebsite: "వెబ్‌సైట్",
         downloadExtension: "డౌన్‌లోడ్"
       }
@@ -1277,6 +1398,14 @@ const remainingTranslations = {
         techList: ["Verimlilik Aracı", "Uzantı", "Yardımcı", "Zorlama", "Dijital Sağlık"],
         visitWebsite: "Web Sitesi",
         downloadExtension: "İndir"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Çevrimiçi fotoğraf stüdyonuz.",
+        description: "Görüntülerinizi hassasiyet, yaratıcılık ve hızla dönüştürün. Doğrudan tarayıcınızda. Filtreler, renk araçları, arka plan kaldırma, kırpma, döndürme, yeniden boyutlandırma ve daha fazlası — hepsi tek bir sezgisel arayüzde.",
+        techList: ["Görüntü İşleme", "Fotoğraf Düzenleme", "Filtreler", "Arka Plan Kaldırma", "Tarayıcı Tabanlı"],
+        visitWebsite: "Web Sitesi",
+        downloadExtension: "İndir"
       }
     },
     privacy: {
@@ -1345,6 +1474,14 @@ const remainingTranslations = {
         subtitle: "Ít màn hình hơn, nhiều ôm hơn.",
         description: "Công cụ năng suất cách mạng tự động chuyển màn hình của bạn sang chế độ thang độ xám khi bạn mở các trang như TikTok, Instagram, YouTube, X/Twitter, Facebook, v.v. Giúp giảm nghiện mạng xã hội thông qua các tín hiệu thị giác nhẹ nhàng mà không chặn hoặc ép buộc.",
         techList: ["Công cụ Năng suất", "Tiện ích mở rộng", "Trợ giúp", "Ép buộc", "Sức khỏe Kỹ thuật số"],
+        visitWebsite: "Trang web",
+        downloadExtension: "Tải xuống"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Studio ảnh trực tuyến của bạn.",
+        description: "Chuyển đổi hình ảnh của bạn với độ chính xác, sáng tạo và tốc độ. Trực tiếp trong trình duyệt của bạn. Bộ lọc, công cụ màu sắc, xóa nền, cắt, xoay, thay đổi kích thước và hơn thế nữa — tất cả trong một giao diện trực quan.",
+        techList: ["Xử lý Hình ảnh", "Chỉnh sửa Ảnh", "Bộ lọc", "Xóa Nền", "Dựa trên Trình duyệt"],
         visitWebsite: "Trang web",
         downloadExtension: "Tải xuống"
       }
@@ -1417,6 +1554,14 @@ const remainingTranslations = {
         techList: ["Strumento di Produttività", "Estensione", "Helper", "Forzare", "Benessere Digitale"],
         visitWebsite: "Sito Web",
         downloadExtension: "Scarica"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Il tuo studio fotografico online.",
+        description: "Trasforma le tue immagini con precisione, creatività e velocità. Direttamente nel tuo browser. Filtri, strumenti colore, rimozione sfondo, ritaglio, rotazione, ridimensionamento e altro ancora — tutto in un'interfaccia intuitiva.",
+        techList: ["Elaborazione Immagini", "Modifica Foto", "Filtri", "Rimozione Sfondo", "Basato su Browser"],
+        visitWebsite: "Sito Web",
+        downloadExtension: "Scarica"
       }
     },
     privacy: {
@@ -1485,6 +1630,14 @@ const remainingTranslations = {
         subtitle: "หน้าจอน้อยลง โอบกอดมากขึ้น",
         description: "เครื่องมือเพิ่มประสิทธิภาพการทำงานที่ปฏิวัติวงการซึ่งเปลี่ยนหน้าจอของคุณเป็นโหมดขาวดำโดยอัตโนมัติเมื่อคุณเปิดไซต์เช่น TikTok, Instagram, YouTube, X/Twitter, Facebook ฯลฯ ช่วยลดการติดโซเชียลมีเดียผ่านสัญญาณภาพที่อ่อนโยนโดยไม่บล็อกหรือบังคับ",
         techList: ["เครื่องมือเพิ่มประสิทธิภาพ", "ส่วนขยาย", "ตัวช่วย", "บังคับ", "สุขภาพดิจิทัล"],
+        visitWebsite: "เว็บไซต์",
+        downloadExtension: "ดาวน์โหลด"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "สตูดิโอถ่ายภาพออนไลน์ของคุณ",
+        description: "แปลงภาพของคุณด้วยความแม่นยำ ความสร้างสรรค์ และความเร็ว โดยตรงในเบราว์เซอร์ของคุณ ฟิลเตอร์ เครื่องมือสี การลบพื้นหลัง การครอบตัด การหมุน การปรับขนาด และอื่นๆ อีกมากมาย — ทั้งหมดในอินเทอร์เฟซที่ใช้งานง่าย",
+        techList: ["การประมวลผลภาพ", "การแก้ไขภาพ", "ฟิลเตอร์", "การลบพื้นหลัง", "แบบเบราว์เซอร์"],
         visitWebsite: "เว็บไซต์",
         downloadExtension: "ดาวน์โหลด"
       }
@@ -1557,6 +1710,14 @@ const remainingTranslations = {
         techList: ["Інструмент продуктивності", "Розширення", "Помічник", "Примус", "Цифрове благополуччя"],
         visitWebsite: "Веб-сайт",
         downloadExtension: "Завантажити"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Ваша фотостудія онлайн.",
+        description: "Перетворюйте свої зображення з точністю, творчістю та швидкістю. Безпосередньо у вашому браузері. Фільтри, інструменти кольору, видалення фону, обрізання, поворот, зміна розміру та багато іншого — все в одному інтуїтивному інтерфейсі.",
+        techList: ["Обробка зображень", "Редагування фото", "Фільтри", "Видалення фону", "Браузерний"],
+        visitWebsite: "Веб-сайт",
+        downloadExtension: "Завантажити"
       }
     },
     privacy: {
@@ -1625,6 +1786,14 @@ const remainingTranslations = {
         subtitle: "Lebih sedikit layar, lebih banyak pelukan.",
         description: "Alat produktivitas revolusioner yang secara otomatis mengubah layar Anda ke mode skala abu-abu saat Anda membuka situs seperti TikTok, Instagram, YouTube, X/Twitter, Facebook, dll. Membantu mengurangi kecanduan media sosial melalui isyarat visual yang lembut tanpa memblokir atau memaksa.",
         techList: ["Alat Produktivitas", "Ekstensi", "Helper", "Memaksa", "Kesejahteraan Digital"],
+        visitWebsite: "Situs Web",
+        downloadExtension: "Unduh"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Studio foto online Anda.",
+        description: "Ubah gambar Anda dengan presisi, kreativitas, dan kecepatan. Langsung di browser Anda. Filter, alat warna, penghapusan latar belakang, potong, putar, ubah ukuran, dan banyak lagi — semuanya dalam satu antarmuka yang intuitif.",
+        techList: ["Pemrosesan Gambar", "Penyuntingan Foto", "Filter", "Penghapusan Latar Belakang", "Berbasis Browser"],
         visitWebsite: "Situs Web",
         downloadExtension: "Unduh"
       }
@@ -1697,6 +1866,14 @@ const remainingTranslations = {
         techList: ["Productiviteitstool", "Extensie", "Helper", "Dwingen", "Digitale Wellness"],
         visitWebsite: "Website",
         downloadExtension: "Downloaden"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Uw fotostudio online.",
+        description: "Transformeer uw afbeeldingen met precisie, creativiteit en snelheid. Direct in uw browser. Filters, kleurgereedschappen, achtergrondverwijdering, bijsnijden, roteren, formaat wijzigen en meer — alles in één intuïtieve interface.",
+        techList: ["Afbeeldingsverwerking", "Foto Bewerken", "Filters", "Achtergrondverwijdering", "Browser-gebaseerd"],
+        visitWebsite: "Website",
+        downloadExtension: "Downloaden"
       }
     },
     privacy: {
@@ -1765,6 +1942,14 @@ const remainingTranslations = {
         subtitle: "Mniej ekranu, więcej przytuleń.",
         description: "Rewolucyjne narzędzie produktywności, które automatycznie przełącza ekran w tryb skali szarości po otwarciu stron takich jak TikTok, Instagram, YouTube, X/Twitter, Facebook itp. Pomaga zmniejszyć uzależnienie od mediów społecznościowych poprzez delikatne wskazówki wizualne bez blokowania lub zmuszania.",
         techList: ["Narzędzie Produktywności", "Rozszerzenie", "Pomocnik", "Wymuszanie", "Dobrostan Cyfrowy"],
+        visitWebsite: "Strona internetowa",
+        downloadExtension: "Pobierz"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Twoje studio fotograficzne online.",
+        description: "Przekształć swoje obrazy z precyzją, kreatywnością i szybkością. Bezpośrednio w przeglądarce. Filtry, narzędzia kolorów, usuwanie tła, przycinanie, obracanie, zmiana rozmiaru i więcej — wszystko w jednym intuicyjnym interfejsie.",
+        techList: ["Przetwarzanie Obrazów", "Edycja Zdjęć", "Filtry", "Usuwanie Tła", "Oparte na Przeglądarce"],
         visitWebsite: "Strona internetowa",
         downloadExtension: "Pobierz"
       }
@@ -1837,6 +2022,14 @@ const remainingTranslations = {
         techList: ["Produktivitetsverktyg", "Förlängning", "Hjälpare", "Tvinga", "Digitalt välbefinnande"],
         visitWebsite: "Webbplats",
         downloadExtension: "Ladda ner"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Ditt fotostudio online.",
+        description: "Förvandla dina bilder med precision, kreativitet och hastighet. Direkt i din webbläsare. Filter, färgverktyg, bakgrundsborttagning, beskärning, rotation, storleksändring och mer — allt i ett intuitivt gränssnitt.",
+        techList: ["Bildbehandling", "Foto Redigering", "Filter", "Bakgrundsborttagning", "Webbläsarbaserad"],
+        visitWebsite: "Webbplats",
+        downloadExtension: "Ladda ner"
       }
     },
     privacy: {
@@ -1905,6 +2098,14 @@ const remainingTranslations = {
         subtitle: "Mai puțin ecran, mai multe îmbrățișări.",
         description: "Instrument de productivitate revoluționar care comută automat ecranul dvs. în modul tonuri de gri când deschideți site-uri precum TikTok, Instagram, YouTube, X/Twitter, Facebook, etc. Ajută la reducerea dependenței de rețelele sociale prin indicii vizuale blânde fără blocare sau forțare.",
         techList: ["Instrument de Productivitate", "Extensie", "Helper", "Forțare", "Bunăstare Digitală"],
+        visitWebsite: "Site web",
+        downloadExtension: "Descărcați"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Studio-ul dvs. foto online.",
+        description: "Transformați-vă imaginile cu precizie, creativitate și viteză. Direct în browser-ul dvs. Filtre, instrumente de culoare, eliminare fundal, decupare, rotire, redimensionare și multe altele — toate într-o interfață intuitivă.",
+        techList: ["Prelucrare Imagini", "Editare Foto", "Filtre", "Eliminare Fundal", "Bazat pe Browser"],
         visitWebsite: "Site web",
         downloadExtension: "Descărcați"
       }
@@ -1977,6 +2178,14 @@ const remainingTranslations = {
         techList: ["ထုတ်လုပ်မှု ကိရိယာ", "အတိုးချဲ့မှု", "အကူအညီ", "အတင်းအကျပ်", "ဒစ်ဂျစ်တယ် ကျန်းမာရေး"],
         visitWebsite: "ဝက်ဘ်ဆိုဒ်",
         downloadExtension: "ဒေါင်းလုဒ်"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "သင်၏အွန်လိုင်း ဓာတ်ပုံစတူဒီယို။",
+        description: "တိကျမှု၊ ဖန်တီးမှုနှင့် အမြန်နှုန်းဖြင့် သင်၏ပုံများကို ပြောင်းလဲပါ။ သင်၏ဘရောက်ဆာတွင် တိုက်ရိုက်။ စစ်ထုတ်မှုများ၊ အရောင် ကိရိယာများ၊ နောက်ခံ ဖယ်ရှားခြင်း၊ ဖြတ်တောက်ခြင်း၊ လှည့်ခြင်း၊ အရွယ်အစား ပြောင်းလဲခြင်းနှင့် အခြားအရာများ — အားလုံးကို အလွယ်တကူနားလည်နိုင်သော အင်တာဖေ့စ်တစ်ခုတွင်။",
+        techList: ["ပုံ လုပ်ဆောင်မှု", "ဓာတ်ပုံ တည်းဖြတ်ခြင်း", "စစ်ထုတ်မှုများ", "နောက်ခံ ဖယ်ရှားခြင်း", "ဘရောက်ဆာ-အခြေခံ"],
+        visitWebsite: "ဝက်ဘ်ဆိုဒ်",
+        downloadExtension: "ဒေါင်းလုဒ်"
       }
     },
     privacy: {
@@ -2045,6 +2254,14 @@ const remainingTranslations = {
         subtitle: "Kevesebb képernyő, több ölelés.",
         description: "Forradalmi termelékenységi eszköz, amely automatikusan átváltja a képernyőt szürkeárnyalatos módba, amikor olyan oldalakat nyit meg, mint a TikTok, Instagram, YouTube, X/Twitter, Facebook, stb. Segít csökkenteni a közösségi média függőséget finom vizuális jelek révén blokkolás vagy kényszerítés nélkül.",
         techList: ["Termelékenységi Eszköz", "Kiterjesztés", "Segítő", "Kényszerítés", "Digitális Jóllét"],
+        visitWebsite: "Weboldal",
+        downloadExtension: "Letöltés"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Online fotóstúdiója.",
+        description: "Alakítsa át képeit pontossággal, kreativitással és sebességgel. Közvetlenül a böngészőjében. Szűrők, színeszközök, háttér eltávolítás, vágás, forgatás, átméretezés és még sok más — minden egy intuitív felületen.",
+        techList: ["Képfeldolgozás", "Fotó Szerkesztés", "Szűrők", "Háttér Eltávolítás", "Böngésző Alapú"],
         visitWebsite: "Weboldal",
         downloadExtension: "Letöltés"
       }
@@ -2117,6 +2334,14 @@ const remainingTranslations = {
         techList: ["Nástroj Produktivity", "Rozšíření", "Pomocník", "Nucení", "Digitální Zdraví"],
         visitWebsite: "Webová stránka",
         downloadExtension: "Stáhnout"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Vaše online fotostudio.",
+        description: "Transformujte své obrázky s přesností, kreativitou a rychlostí. Přímo ve vašem prohlížeči. Filtry, nástroje barev, odstranění pozadí, ořez, otočení, změna velikosti a další — vše v jednom intuitivním rozhraní.",
+        techList: ["Zpracování Obrázků", "Úprava Fotografií", "Filtry", "Odstranění Pozadí", "Založeno na Prohlížeči"],
+        visitWebsite: "Webová stránka",
+        downloadExtension: "Stáhnout"
       }
     },
     privacy: {
@@ -2185,6 +2410,14 @@ const remainingTranslations = {
         subtitle: "Λιγότερη οθόνη, περισσότερες αγκαλιές.",
         description: "Επαναστατικό εργαλείο παραγωγικότητας που αλλάζει αυτόματα την οθόνη σας σε λειτουργία αποχρώσεων του γκρι όταν ανοίγετε τοποθεσίες όπως TikTok, Instagram, YouTube, X/Twitter, Facebook, κ.λπ. Βοηθά στη μείωση της εξάρτησης από τα κοινωνικά δίκτυα μέσω απαλών οπτικών σημάτων χωρίς αποκλεισμό ή εξαναγκασμό.",
         techList: ["Εργαλείο Παραγωγικότητας", "Επέκταση", "Βοηθός", "Εξαναγκασμός", "Ψηφιακή Ευεξία"],
+        visitWebsite: "Ιστοσελίδα",
+        downloadExtension: "Λήψη"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "Το στούντιο φωτογραφίας σας online.",
+        description: "Μετατρέψτε τις εικόνες σας με ακρίβεια, δημιουργικότητα και ταχύτητα. Απευθείας στον περιηγητή σας. Φίλτρα, εργαλεία χρώματος, αφαίρεση φόντου, περικοπή, περιστροφή, αλλαγή μεγέθους και πολλά άλλα — όλα σε μια διαισθητική διεπαφή.",
+        techList: ["Επεξεργασία Εικόνας", "Επεξεργασία Φωτογραφίας", "Φίλτρα", "Αφαίρεση Φόντου", "Βασισμένο σε Περιηγητή"],
         visitWebsite: "Ιστοσελίδα",
         downloadExtension: "Λήψη"
       }
@@ -2257,6 +2490,14 @@ const remainingTranslations = {
         techList: ["כלי פרודוקטיביות", "תוסף", "עוזר", "כפייה", "רווחה דיגיטלית"],
         visitWebsite: "אתר",
         downloadExtension: "הורד"
+      },
+      fotoAdapt: {
+        title: "FotoAdapt",
+        subtitle: "סטודיו הצילום שלך באינטרנט.",
+        description: "הפוך את התמונות שלך בדיוק, יצירתיות ומהירות. ישירות בדפדפן שלך. פילטרים, כלי צבע, הסרת רקע, חיתוך, סיבוב, שינוי גודל ועוד — הכל בממשק אינטואיטיבי אחד.",
+        techList: ["עיבוד תמונה", "עריכת תמונות", "פילטרים", "הסרת רקע", "מבוסס דפדפן"],
+        visitWebsite: "אתר",
+        downloadExtension: "הורד"
       }
     },
     privacy: {
@@ -2273,11 +2514,67 @@ const remainingTranslations = {
   }
 };
 
-// Merge remaining translations  
-Object.assign(petrovskiStudioTranslations, remainingTranslations);
+type BaseLanguage = keyof typeof baseTranslations;
+type AdditionalLanguage = keyof typeof additionalTranslations;
+type RemainingLanguage = keyof typeof remainingTranslations;
 
-export type Language = keyof typeof petrovskiStudioTranslations;
-export type TranslationKey = keyof typeof petrovskiStudioTranslations.en;
+export type Language = BaseLanguage | AdditionalLanguage | RemainingLanguage;
+
+export type ProjectCopy = {
+  title: string;
+  subtitle: string;
+  description: string;
+  techList: string[];
+  visitWebsite: string;
+  downloadExtension: string;
+};
+
+export type ProjectsCopy = {
+  title: string;
+  subtitle: string;
+  technologies: string;
+  colorAdapt: ProjectCopy;
+  musicAdapt: ProjectCopy;
+  soundAdapt?: ProjectCopy;
+  matrixRain: ProjectCopy;
+  grayTrigger: ProjectCopy;
+  fotoAdapt?: ProjectCopy;
+};
+
+export type PetrovskiStudioTranslation = {
+  nav: {
+    about: string;
+    projects: string;
+    contact: string;
+    startProject: string;
+    language: string;
+  };
+  hero: {
+    badge: string;
+    title: string;
+    titleHighlight: string;
+    subtitle: string;
+    description: string;
+    quote?: string;
+    quoteAuthor?: string;
+    startProject: string;
+    viewWork?: string;
+  };
+  projects: ProjectsCopy;
+  privacy?: {
+    title: string;
+    points: Array<{ title: string; desc: string }>;
+  };
+  footer: { copyright: string };
+};
+
+export const petrovskiStudioTranslations = ({
+  ...baseTranslations,
+  ...additionalTranslations,
+  ...remainingTranslations
+} as unknown) as Record<Language, PetrovskiStudioTranslation>;
+
+export type TranslationKey = keyof PetrovskiStudioTranslation;
 
 export type CryptoForecasterCopy = {
   title: string;
@@ -2288,7 +2585,7 @@ export type CryptoForecasterCopy = {
   downloadExtension: string;
 };
 
-export const cryptoForecasterTranslations: Record<Language, CryptoForecasterCopy> = {
+export const cryptoForecasterTranslations: { en: CryptoForecasterCopy } & Partial<Record<Language, CryptoForecasterCopy>> = {
   en: {
     title: "CryptoForecaster",
     subtitle: "AI-powered cryptocurrency forecasting.",
