@@ -225,6 +225,58 @@ function App() {
             </p>
           </div>
 
+          {/* ColorAdapt Gaming Project — first */}
+          {t.projects.colorAdaptGaming && (
+            <div className={`relative p-6 sm:p-8 lg:p-10 rounded-3xl ${themeClasses.cardBg} border ${themeClasses.cardBorder} backdrop-blur-sm mb-6 mx-auto max-w-5xl`}>
+              <div className={`absolute inset-0 rounded-3xl ${isDarkTheme ? 'bg-gradient-to-br from-violet-500/5 to-fuchsia-500/5' : 'bg-gradient-to-br from-violet-100/50 to-fuchsia-100/50'}`}></div>
+              <div className="relative z-10">
+                <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+                  <div className="flex-1">
+                    <h3 className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-violet-400 to-fuchsia-500 bg-clip-text text-transparent mb-2">
+                      {t.projects.colorAdaptGaming.title}
+                    </h3>
+                    <p className={`text-lg sm:text-xl ${themeClasses.textSecondary} mb-3`}>
+                      {t.projects.colorAdaptGaming.subtitle}
+                    </p>
+                    <p className={`${themeClasses.textSecondary} leading-relaxed mb-4 sm:mb-5 text-sm sm:text-base`}>
+                      {t.projects.colorAdaptGaming.description}
+                    </p>
+                    <div className="mb-4 sm:mb-5">
+                      <h4 className={`text-base sm:text-lg font-semibold ${themeClasses.text} mb-2 sm:mb-3`}>{t.projects.technologies}</h4>
+                      <div className="flex flex-wrap gap-2">
+                        {t.projects.colorAdaptGaming.techList.map((tech, index) => (
+                          <span key={index} className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-lg text-xs sm:text-sm font-medium ${isDarkTheme ? 'bg-slate-700/50 text-violet-300' : 'bg-violet-50 text-violet-700'} border ${isDarkTheme ? 'border-violet-500/30' : 'border-violet-200'}`}>
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+                  <div className="flex flex-col sm:flex-row lg:flex-col gap-3 sm:gap-4 lg:min-w-[200px]">
+                    <a
+                      href="https://store.steampowered.com/app/4449950/ColorAdapt_Gaming/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-violet-500 to-fuchsia-600 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-500/25"
+                    >
+                      {t.projects.colorAdaptGaming.steamStore}
+                      <ArrowRight className="w-4 h-4 ml-2" />
+                    </a>
+                    <a
+                      href="https://apps.microsoft.com/detail/9n3bbkjkzjxp?hl=en-US&gl=MY"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center px-5 sm:px-6 py-2.5 sm:py-3 bg-gradient-to-r from-violet-400 to-fuchsia-500 rounded-lg font-semibold text-white text-sm sm:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg hover:shadow-violet-400/25"
+                    >
+                      {t.projects.colorAdaptGaming.microsoftStore}
+                      <Download className="w-4 h-4 ml-2" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+
           {/* MusicAdapt Project */}
           <div className={`relative p-6 sm:p-8 lg:p-10 rounded-3xl ${themeClasses.cardBg} border ${themeClasses.cardBorder} backdrop-blur-sm mb-6 mx-auto max-w-5xl`}>
             <div className={`absolute inset-0 rounded-3xl ${isDarkTheme ? 'bg-gradient-to-br from-indigo-500/5 to-purple-500/5' : 'bg-gradient-to-br from-indigo-100/50 to-purple-100/50'}`}></div>

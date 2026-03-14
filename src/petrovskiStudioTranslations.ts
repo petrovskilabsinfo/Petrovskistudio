@@ -22,6 +22,14 @@ const baseTranslations = {
       title: "Featured Projects",
       subtitle: "Explore our portfolio of successful projects that demonstrate our expertise in creating cutting-edge digital solutions.",
       technologies: "Technologies",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "A lightweight, universal color filter for desktop, games, and apps.",
+        description: "A lightweight, universal color filter that works across desktop, games, and apps. Delivers HDR-like cinematic contrast and smoother, more natural lighting. System-wide filter compatible with all GPUs and anti-cheat, with presets for accessibility and quick hotkeys. Zero latency, runs locally with no telemetry.",
+        techList: ["System-Wide Filter", "HDR", "Cinematic", "Zero Latency", "Privacy First"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Bring color back to your life.",
@@ -123,6 +131,14 @@ const baseTranslations = {
       title: "Proyectos Destacados",
       subtitle: "Explora nuestro portafolio de proyectos exitosos que demuestran nuestra experiencia en crear soluciones digitales de vanguardia.",
       technologies: "Tecnologías",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filtro de color universal y ligero para escritorio, juegos y aplicaciones.",
+        description: "Filtro de color universal que funciona en escritorio, juegos y aplicaciones. Ofrece contraste cinematográfico tipo HDR e iluminación más suave y natural. Filtro global compatible con todas las GPU y anti-cheat, con presets de accesibilidad y atajos rápidos. Cero latencia, se ejecuta localmente sin telemetría.",
+        techList: ["Filtro Global", "HDR", "Cinematográfico", "Cero Latencia", "Privacidad"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Devuelve el color a tu vida.",
@@ -224,6 +240,14 @@ const baseTranslations = {
       title: "精选项目",
       subtitle: "探索我们成功的项目组合，展示我们在创建前沿数字解决方案方面的专业知识。",
       technologies: "技术",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "轻量级通用色彩滤镜，适用于桌面、游戏和应用。",
+        description: "适用于桌面、游戏和应用的轻量级通用色彩滤镜。提供类 HDR 电影对比度和更柔和自然的照明。全系统滤镜兼容所有 GPU 和反作弊，含无障碍预设和快捷热键。零延迟，本地运行无遥测。",
+        techList: ["全系统滤镜", "HDR", "电影感", "零延迟", "隐私优先"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "让色彩重回您的生活。",
@@ -325,6 +349,14 @@ const baseTranslations = {
       title: "विशेष प्रोजेक्ट",
       subtitle: "सफल प्रोजेक्टों के हमारे पोर्टफोलियो का अन्वेषण करें जो अत्याधुनिक डिजिटल समाधान बनाने में हमारी विशेषज्ञता दर्शाते हैं।",
       technologies: "प्रौद्योगिकियाँ",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "डेस्कटॉप, गेम्स और ऐप्स के लिए हल्का, यूनिवर्सल कलर फ़िल्टर।",
+        description: "डेस्कटॉप, गेम्स और ऐप्स में काम करने वाला हल्का यूनिवर्सल कलर फ़िल्टर। HDR जैसा सिनेमैटिक कॉन्ट्रास्ट और नरम, प्राकृतिक लाइटिंग। सभी GPU और ऐंटी-चीट के साथ सिस्टम-वाइड फ़िल्टर, एक्सेसिबिलिटी प्रीसेट और हॉटकी। ज़ीरो लेटेंसी, लोकल चलता है, कोई टेलीमेट्री नहीं।",
+        techList: ["सिस्टम-वाइड फ़िल्टर", "HDR", "सिनेमैटिक", "जीरो लेटेंसी", "प्राइवेसी फर्स्ट"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "रंग को अपने जीवन में वापस लाएं।",
@@ -426,6 +458,14 @@ const baseTranslations = {
       title: "مشاريع مميزة",
       subtitle: "استكشف محفظة مشاريعنا الناجحة التي تُظهر خبرتنا في إنشاء حلول رقمية متطورة.",
       technologies: "التقنيات",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "مرشح ألوان عالمي خفيف للسطح المكتب والألعاب والتطبيقات.",
+        description: "مرشح ألوان عالمي خفيف يعمل على السطح المكتب والألعاب والتطبيقات. يوفر تباينًا سينمائيًا شبيهًا بـ HDR وإضاءة أنعم وأكثر طبيعية. مرشح على مستوى النظام متوافق مع جميع معالجات الرسوم وأنظمة مكافحة الغش، مع إعدادات جاهزة للنفاذية واختصارات سريعة. صفر زمن انتقال، يعمل محليًا بدون تتبع.",
+        techList: ["مرشح على مستوى النظام", "HDR", "سينمائي", "صفر زمن انتقال", "الخصوصية أولاً"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "أعد الألوان إلى حياتك.",
@@ -527,6 +567,14 @@ const baseTranslations = {
       title: "Projetos em Destaque",
       subtitle: "Explore nosso portfólio de projetos bem-sucedidos que demonstram nossa expertise em criar soluções digitais de ponta.",
       technologies: "Tecnologias",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filtro de cor universal e leve para desktop, jogos e aplicativos.",
+        description: "Filtro de cor universal e leve que funciona em desktop, jogos e aplicativos. Oferece contraste cinematográfico tipo HDR e iluminação mais suave e natural. Filtro em todo o sistema compatível com todas as GPUs e anti-cheat, com presets de acessibilidade e atalhos rápidos. Zero latência, executa localmente sem telemetria.",
+        techList: ["Filtro em Todo o Sistema", "HDR", "Cinematográfico", "Zero Latência", "Privacidade Primeiro"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Traga a cor de volta à sua vida.",
@@ -628,6 +676,14 @@ const baseTranslations = {
       title: "Избранные проекты",
       subtitle: "Изучите наш портфель успешных проектов, демонстрирующих наш опыт в создании передовых цифровых решений.",
       technologies: "Технологии",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Лёгкий универсальный цветовой фильтр для рабочего стола, игр и приложений.",
+        description: "Лёгкий универсальный цветовой фильтр для рабочего стола, игр и приложений. Кинематографичный контраст в духе HDR и более мягкое, естественное освещение. Системный фильтр совместим со всеми видеокартами и античитами, есть пресеты для доступности и горячие клавиши. Нулевая задержка, работает локально, без телеметрии.",
+        techList: ["Системный фильтр", "HDR", "Кинематографичность", "Нулевая задержка", "Конфиденциальность"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Верните цвет в свою жизнь.",
@@ -727,6 +783,14 @@ const additionalTranslations = {
       title: "বৈশিষ্ট্যযুক্ত প্রকল্প",
       subtitle: "আমাদের সফল প্রকল্পগুলির পোর্টফোলিও অন্বেষণ করুন যা অত্যাধুনিক ডিজিটাল সমাধান তৈরি করতে আমাদের দক্ষতা প্রদর্শন করে।",
       technologies: "প্রযুক্তি",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "ডেস্কটপ, গেম এবং অ্যাপের জন্য হালকা, সর্বজনীন রঙ ফিল্টার।",
+        description: "ডেস্কটপ, গেম এবং অ্যাপ জুড়ে কাজ করে এমন হালকা সর্বজনীন রঙ ফিল্টার। HDR-এর মতো সিনেমাটিক কনট্রাস্ট এবং মসৃণ, প্রাকৃতিক আলো দেয়। সমস্ত GPU এবং অ্যান্টি-চিটের সাথে সামঞ্জস্যপূর্ণ সিস্টেম-ওয়াইড ফিল্টার, অ্যাক্সেসিবিলিটির প্রিসেট এবং দ্রুত হটকি। জিরো লেটেন্সি, স্থানীয়ভাবে চলে, কোন টেলিমেট্রি নেই।",
+        techList: ["সিস্টেম-ওয়াইড ফিল্টার", "HDR", "সিনেমাটিক", "জিরো লেটেন্সি", "গোপনীয়তা প্রথম"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "রঙকে আপনার জীবনে ফিরিয়ে আনুন।",
@@ -805,6 +869,14 @@ const additionalTranslations = {
       title: "注目のプロジェクト",
       subtitle: "最先端のデジタルソリューションを作成する際の専門知識を示す成功したプロジェクトのポートフォリオを探索してください。",
       technologies: "技術",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "デスクトップ、ゲーム、アプリ用の軽量ユニバーサルカラーフィルター。",
+        description: "デスクトップ、ゲーム、アプリで動作する軽量ユニバーサルカラーフィルター。HDR風のシネマティックコントラストとより滑らかで自然な照明を実現。全GPUとアンチチート対応のシステム全体フィルター、アクセシビリティプリセットとクイックホットキー。ゼロレイテンシ、ローカル実行、テレメトリなし。",
+        techList: ["システム全体フィルター", "HDR", "シネマティック", "ゼロレイテンシ", "プライバシー第一"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "色彩をあなたの生活に取り戻す。",
@@ -883,6 +955,14 @@ const additionalTranslations = {
       title: "Ausgewählte Projekte",
       subtitle: "Entdecken Sie unser Portfolio erfolgreicher Projekte, die unsere Expertise bei der Erstellung modernster digitaler Lösungen demonstrieren.",
       technologies: "Technologien",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Ein leichtes, universelles Farbfilter für Desktop, Spiele und Apps.",
+        description: "Ein leichtes, universelles Farbfilter für Desktop, Spiele und Apps. Bietet HDR-ähnlichen kinoreifen Kontrast und weicheres, natürlicheres Licht. Systemweiter Filter, kompatibel mit allen GPUs und Anti-Cheat, mit Presets für Barrierefreiheit und Schnellzugriffstasten. Keine Latenz, läuft lokal ohne Telemetrie.",
+        techList: ["Systemweiter Filter", "HDR", "Kinoreif", "Keine Latenz", "Privatsphäre zuerst"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Bringen Sie Farbe zurück in Ihr Leben.",
@@ -961,6 +1041,14 @@ const additionalTranslations = {
       title: "주요 프로젝트",
       subtitle: "최첨단 디지털 솔루션을 만드는 전문성을 보여주는 성공적인 프로젝트 포트폴리오를 탐색하세요.",
       technologies: "기술",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "데스크톱, 게임, 앱용 경량 범용 색상 필터.",
+        description: "데스크톱, 게임, 앱 전반에서 작동하는 경량 범용 색상 필터. HDR 같은 시네마틱 대비와 부드럽고 자연스러운 조명. 모든 GPU 및 안티치트와 호환되는 시스템 전체 필터, 접근성 프리셋 및 빠른 단축키. 제로 레이턴시, 로컬 실행, 원격 측정 없음.",
+        techList: ["시스템 전체 필터", "HDR", "시네마틱", "제로 레이턴시", "프라이버시 우선"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "생활에 색상을 되돌리세요.",
@@ -1039,6 +1127,14 @@ const additionalTranslations = {
       title: "Projets en vedette",
       subtitle: "Explorez notre portefeuille de projets réussis qui démontrent notre expertise dans la création de solutions numériques de pointe.",
       technologies: "Technologies",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filtre de couleur universel et léger pour bureau, jeux et applications.",
+        description: "Filtre de couleur universel et léger pour bureau, jeux et applications. Contraste cinématique type HDR et éclairage plus doux et naturel. Filtre système compatible avec toutes les GPU et anti-triche, presets d'accessibilité et raccourcis. Zéro latence, exécution locale sans télémétrie.",
+        techList: ["Filtre système", "HDR", "Cinématique", "Zéro latence", "Confidentialité d'abord"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Rapportez la couleur dans votre vie.",
@@ -1125,6 +1221,14 @@ const remainingTranslations = {
       title: "ਵਿਸ਼ੇਸ਼ ਪ੍ਰੋਜੈਕਟ",
       subtitle: "ਸਾਡੇ ਸਫਲ ਪ੍ਰੋਜੈਕਟਾਂ ਦੇ ਪੋਰਟਫੋਲੀਓ ਦੀ ਪੜਚੋਲ ਕਰੋ ਜੋ ਅਗਲੀ ਪੀੜ੍ਹੀ ਦੇ ਡਿਜੀਟਲ ਹੱਲ ਬਣਾਉਣ ਵਿੱਚ ਸਾਡੀ ਮਾਹਿਰਤਾ ਦਰਸਾਉਂਦੇ ਹਨ।",
       technologies: "ਤਕਨਾਲੋਜੀਆਂ",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "ਡੈਸਕਟਾਪ, ਗੇਮਾਂ ਅਤੇ ਐਪਾਂ ਲਈ ਹਲਕਾ, ਯੂਨੀਵਰਸਲ ਕਲਰ ਫਿਲਟਰ।",
+        description: "ਡੈਸਕਟਾਪ, ਗੇਮਾਂ ਅਤੇ ਐਪਾਂ ਵਿੱਚ ਕੰਮ ਕਰਨ ਵਾਲਾ ਹਲਕਾ ਯੂਨੀਵਰਸਲ ਕਲਰ ਫਿਲਟਰ। HDR ਵਰਗਾ ਸਿਨੇਮੈਟਿਕ ਕੰਟ੍ਰਾਸਟ ਅਤੇ ਨਰਮ, ਕੁਦਰਤੀ ਰੋਸ਼ਨੀ। ਸਾਰੇ GPU ਅਤੇ ਐਂਟੀ-ਚੀਟ ਨਾਲ ਸਿਸਟਮ-ਵਾਈਡ ਫਿਲਟਰ, ਐਕਸੈਸਬਿਲਿਟੀ ਪ੍ਰੀਸੈਟ ਅਤੇ ਤੇਜ਼ ਹਾਟਕੀਆਂ। ਜ਼ੀਰੋ ਲੇਟੈਂਸੀ, ਲੋਕਲ ਚਲਦਾ ਹੈ, ਕੋਈ ਟੈਲੀਮੈਟਰੀ ਨਹੀਂ।",
+        techList: ["ਸਿਸਟਮ-ਵਾਈਡ ਫਿਲਟਰ", "HDR", "ਸਿਨੇਮੈਟਿਕ", "ਜ਼ੀਰੋ ਲੇਟੈਂਸੀ", "ਪ੍ਰਾਈਵੇਸੀ ਫਸਟ"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "ਰੰਗ ਨੂੰ ਆਪਣੇ ਜੀਵਨ ਵਿੱਚ ਵਾਪਸ ਲਿਆਓ।",
@@ -1203,6 +1307,14 @@ const remainingTranslations = {
       title: "Proyek Unggulan",
       subtitle: "Jelajahi portofolio proyek sukses kita sing nggambarake kepakaran kita nggawe solusi digital canggih.",
       technologies: "Teknologi",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filter warna universal sing entheng kanggo desktop, game, lan aplikasi.",
+        description: "Filter warna universal sing entheng sing bisa digunakake ing desktop, game, lan aplikasi. Nggawa kontras sinematik kaya HDR lan pencahayaan sing luwih alus lan alami. Filter sistem kompatibel karo kabeh GPU lan anti-cheat, kanthi preset aksesibilitas lan hotkey cepet. Nol latensi, mlaku lokal tanpa telemetri.",
+        techList: ["Filter Sistem", "HDR", "Sinematik", "Nol Latensi", "Privasi Utama"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Gawe warna maneh menyang urip panjenengan.",
@@ -1281,6 +1393,14 @@ const remainingTranslations = {
       title: "విశేష ప్రాజెక్టులు",
       subtitle: "అత్యాధునిక డిజిటల్ పరిష్కారాలను సృష్టించడంలో మా నైపుణ్యాన్ని ప్రదర్శించే విజయవంతమైన ప్రాజెక్టుల పోర్ట్ఫోలియోని అన్వేషించండి.",
       technologies: "సాంకేతికతలు",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "డెస్క్టాప్, గేమ్‌లు మరియు యాప్‌ల కోసం తేలికపాటి, సార్వత్రిక రంగు ఫిల్టర్.",
+        description: "డెస్క్టాప్, గేమ్‌లు మరియు యాప్‌లలో పనిచేసే తేలికపాటి సార్వత్రిక రంగు ఫిల్టర్. HDR వంటి సినిమాటిక్ కాంట్రాస్ట్ మరియు మృదువైన, సహజమైన లైటింగ్ అందిస్తుంది. అన్ని GPUలు మరియు యాంటీ-చీట్‌తో అనుకూలమైన సిస్టమ్-వైడ్ ఫిల్టర్, ప్రాప్యత ప్రీసెట్‌లు మరియు శీఘ్ర హాట్‌కీలు. జీరో లాటెన్సీ, టెలిమెట్రీ లేకుండా స్థానికంగా నడుస్తుంది.",
+        techList: ["సిస్టమ్-వైడ్ ఫిల్టర్", "HDR", "సినిమాటిక్", "జీరో లాటెన్సీ", "గోప్యతా మొదట"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "మీ జీవితంలోకి రంగును తిరిగి తీసుకురండి.",
@@ -1359,6 +1479,14 @@ const remainingTranslations = {
       title: "Öne Çıkan Projeler",
       subtitle: "En son teknoloji dijital çözümler oluşturmadaki uzmanlığımızı gösteren başarılı projeler portföyümüzü keşfedin.",
       technologies: "Teknolojiler",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Masaüstü, oyunlar ve uygulamalar için hafif, evrensel renk filtresi.",
+        description: "Masaüstü, oyunlar ve uygulamalarda çalışan hafif, evrensel renk filtresi. HDR benzeri sinematik kontrast ve daha yumuşak, doğal aydınlatma. Tüm GPU'lar ve anti-cheat ile uyumlu sistem genelinde filtre, erişilebilirlik ön ayarları ve hızlı kısayol tuşları. Sıfır gecikme, yerel çalışır, telemetri yok.",
+        techList: ["Sistem Genelinde Filtre", "HDR", "Sinematik", "Sıfır Gecikme", "Gizlilik Öncelikli"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Renkleri hayatınıza geri getirin.",
@@ -1437,6 +1565,14 @@ const remainingTranslations = {
       title: "Dự án Nổi bật",
       subtitle: "Khám phá danh mục dự án thành công của chúng tôi thể hiện chuyên môn trong việc tạo ra các giải pháp kỹ thuật số tiên tiến.",
       technologies: "Công nghệ",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Bộ lọc màu nhẹ, phổ quát cho máy tính, trò chơi và ứng dụng.",
+        description: "Bộ lọc màu nhẹ, phổ quát hoạt động trên máy tính, trò chơi và ứng dụng. Mang lại độ tương phản điện ảnh kiểu HDR và ánh sáng mượt mà, tự nhiên hơn. Bộ lọc toàn hệ thống tương thích mọi GPU và chống gian lận, có sẵn cài đặt trước trợ năng và phím tắt. Độ trễ bằng không, chạy cục bộ không thu thập dữ liệu.",
+        techList: ["Bộ lọc toàn hệ thống", "HDR", "Điện ảnh", "Độ trễ không", "Quyền riêng tư trước"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Mang màu sắc trở lại cuộc sống của bạn.",
@@ -1515,6 +1651,14 @@ const remainingTranslations = {
       title: "Progetti in Evidenza",
       subtitle: "Esplora il nostro portafoglio di progetti di successo che dimostrano la nostra competenza nella creazione di soluzioni digitali all'avanguardia.",
       technologies: "Tecnologie",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filtro colore universale e leggero per desktop, giochi e app.",
+        description: "Filtro colore universale e leggero per desktop, giochi e app. Contrasto cinematografico stile HDR e illuminazione più morbida e naturale. Filtro di sistema compatibile con tutte le GPU e anti-cheat, preset per accessibilità e scorciatoie rapide. Zero latenza, esecuzione locale senza telemetria.",
+        techList: ["Filtro di sistema", "HDR", "Cinematografico", "Zero latenza", "Privacy first"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Riporta il colore nella tua vita.",
@@ -1593,6 +1737,14 @@ const remainingTranslations = {
       title: "โครงการเด่น",
       subtitle: "สำรวจพอร์ตโฟลิโอโครงการที่ประสบความสำเร็จของเราที่แสดงความเชี่ยวชาญในการสร้างโซลูชันดิจิทัลที่ล้ำสมัย",
       technologies: "เทคโนโลยี",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "ตัวกรองสีสากลน้ำหนักเบาสำหรับเดสก์ท็อป เกม และแอป",
+        description: "ตัวกรองสีสากลน้ำหนักเบาที่ทำงานบนเดสก์ท็อป เกม และแอป ให้คอนทราสต์แบบภาพยนตร์คล้าย HDR และแสงที่นุ่มนวลเป็นธรรมชาติมากขึ้น ตัวกรองทั้งระบบเข้ากันได้กับ GPU และแอนติ-ชีตทั้งหมด พร้อมพรีเซ็ตการเข้าถึงและฮอตคีย์ ความหน่วงศูนย์ รันในเครื่องโดยไม่เก็บข้อมูล",
+        techList: ["ตัวกรองทั้งระบบ", "HDR", "ภาพยนตร์", "ความหน่วงศูนย์", "ความเป็นส่วนตัวก่อน"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "นำสีกลับมาสู่ชีวิตของคุณ",
@@ -1671,6 +1823,14 @@ const remainingTranslations = {
       title: "Вибрані проекти",
       subtitle: "Дослідіть наш портфель успішних проектів, які демонструють наш досвід у створенні передових цифрових рішень.",
       technologies: "Технології",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Легкий універсальний кольоровий фільтр для робочого столу, ігор та додатків.",
+        description: "Легкий універсальний кольоровий фільтр для робочого столу, ігор та додатків. Кінематографічна контрастність на кшталт HDR та м’яке, природне освітлення. Системний фільтр сумісний з усіма GPU та античитами, є пресети доступності та гарячі клавіші. Нульова затримка, працює локально, без телеметрії.",
+        techList: ["Системний фільтр", "HDR", "Кінематографічність", "Нульова затримка", "Конфіденційність"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Поверніть колір у своє життя.",
@@ -1749,6 +1909,14 @@ const remainingTranslations = {
       title: "Proyek Unggulan",
       subtitle: "Jelajahi portofolio proyek sukses kami yang menunjukkan keahlian kami dalam menciptakan solusi digital terdepan.",
       technologies: "Teknologi",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Filter warna universal ringan untuk desktop, game, dan aplikasi.",
+        description: "Filter warna universal ringan yang bekerja di desktop, game, dan aplikasi. Kontras sinematik mirip HDR dan pencahayaan lebih halus dan alami. Filter sistem luas kompatibel dengan semua GPU dan anti-cheat, dengan preset aksesibilitas dan pintasan. Nol latensi, berjalan lokal tanpa telemetri.",
+        techList: ["Filter Sistem Luas", "HDR", "Sinematik", "Nol Latensi", "Privasi Utama"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Bawa warna kembali ke hidup Anda.",
@@ -1827,6 +1995,14 @@ const remainingTranslations = {
       title: "Uitgelichte Projecten",
       subtitle: "Ontdek ons portfolio van succesvolle projecten die onze expertise tonen in het creëren van geavanceerde digitale oplossingen.",
       technologies: "Technologieën",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Een lichtgewicht, universeel kleurfilter voor desktop, games en apps.",
+        description: "Een lichtgewicht, universeel kleurfilter voor desktop, games en apps. HDR-achtig cinematisch contrast en zachter, natuurlijker licht. Systeembrede filter compatibel met alle GPU's en anti-cheat, met presets voor toegankelijkheid en sneltoetsen. Geen latentie, draait lokaal zonder telemetrie.",
+        techList: ["Systeembrede filter", "HDR", "Cinematisch", "Geen latentie", "Privacy eerst"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Breng kleur terug in uw leven.",
@@ -1905,6 +2081,14 @@ const remainingTranslations = {
       title: "Wyróżnione Projekty",
       subtitle: "Poznaj nasze portfolio udanych projektów, które pokazują naszą ekspertyzę w tworzeniu najnowocześniejszych rozwiązań cyfrowych.",
       technologies: "Technologie",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Lekki, uniwersalny filtr kolorów do pulpitu, gier i aplikacji.",
+        description: "Lekki, uniwersalny filtr kolorów do pulpitu, gier i aplikacji. Kinowy kontrast w stylu HDR i łagodniejsze, naturalne oświetlenie. Filtr systemowy zgodny ze wszystkimi GPU i anty-cheatem, z ustawieniami dostępności i skrótami. Zero opóźnień, działa lokalnie bez telemetrii.",
+        techList: ["Filtr systemowy", "HDR", "Kinowy", "Zero opóźnień", "Prywatność first"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Przywróć kolor swojemu życiu.",
@@ -1983,6 +2167,14 @@ const remainingTranslations = {
       title: "Utvalda Projekt",
       subtitle: "Utforska vår portfölj av framgångsrika projekt som visar vår expertis i att skapa toppmoderna digitala lösningar.",
       technologies: "Teknologier",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Ett lätt, universellt färgfilter för skrivbord, spel och appar.",
+        description: "Ett lätt, universellt färgfilter för skrivbord, spel och appar. HDR-liknande filmisk kontrast och mjukare, mer naturlig belysning. Systemomspännande filter kompatibelt med alla GPU:er och anti-cheat, med förinställningar för tillgänglighet och snabbkommandon. Noll latens, körs lokalt utan telemetri.",
+        techList: ["Systemomspännande filter", "HDR", "Filmisk", "Noll latens", "Integritet först"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "För levande färg tillbaka i ditt liv.",
@@ -2061,6 +2253,14 @@ const remainingTranslations = {
       title: "Proiecte Recomandate",
       subtitle: "Explorați portofoliul nostru de proiecte de succes care demonstrează expertiza noastră în crearea de soluții digitale de ultimă oră.",
       technologies: "Tehnologii",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Un filtru de culoare universal și ușor pentru desktop, jocuri și aplicații.",
+        description: "Filtru de culoare universal și ușor pentru desktop, jocuri și aplicații. Contrast cinematografic tip HDR și iluminare mai moale și naturală. Filtru la nivel de sistem compatibil cu toate GPU-urile și anti-cheat, cu preseturi pentru accesibilitate și comenzi rapide. Latență zero, rulează local fără telemetrie.",
+        techList: ["Filtru la nivel de sistem", "HDR", "Cinematografic", "Latență zero", "Confidențialitate first"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Aduceți culoarea înapoi în viața voastră.",
@@ -2139,6 +2339,14 @@ const remainingTranslations = {
       title: "ထင်ရှားသော စီမံကိန်းများ",
       subtitle: "ခေတ်မီသော ဒစ်ဂျစ်တယ်အဖြေရှင်းများ ဖန်တီးရာတွင် ကျွန်ုပ်တို့၏ကျွမ်းကျင်မှုကို ပြသသော အောင်မြင်သော စီမံကိန်းများ၏ ပို့တဖိုလီယိုကို ရှာဖွေကြည့်ရှုပါ။",
       technologies: "နည်းပညာများ",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "ဒက်စ်တော့၊ ဂိမ်းများနှင့် အက်ပ်များအတွက် ပေါ့ပါးသော ကမ္ဘာလုံးဆိုင်ရာ အရောင်စစ်ထုတ်ကိရိယာ။",
+        description: "ဒက်စ်တော့၊ ဂိမ်းများနှင့် အက်ပ်များတွင် အလုပ်လုပ်သော ပေါ့ပါးသည့် ကမ္ဘာလုံးဆိုင်ရာ အရောင်စစ်ထုတ်ကိရိယာ။ HDR ကဲ့သို့ ရုပ်ရှင်ဆန်သော ကွာခြားမှုနှင့် ပိုမိုပျော့ပျောင်းသော၊ သဘာဝအလင်းရောင်။ GPU အားလုံးနှင့် anti-cheat နှင့် ကိုက်ညီသော စနစ်တစ်ခုလုံး စစ်ထုတ်ကိရိယာ၊ ပရီဆက်များနှင့် ခလုတ်များ။ သုည နှောင့်နှေးမှု၊ ဒေသခံတွင် ပြေးသည်၊ ထီလီမက်ထရီ မရှိ။",
+        techList: ["စနစ်တစ်ခုလုံး စစ်ထုတ်ကိရိယာ", "HDR", "ရုပ်ရှင်ဆန်", "သုည နှောင့်နှေးမှု", "ကိုယ်ရေးအရင်ဦး"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "သင်၏ဘဝသို့ အရောင်ကို ပြန်ယူလာပါ။",
@@ -2217,6 +2425,14 @@ const remainingTranslations = {
       title: "Kiemelt Projektek",
       subtitle: "Fedezze fel sikeres projektek portfóliónkat, amely bemutatja szakértelmünket a legmodernebb digitális megoldások létrehozásában.",
       technologies: "Technológiák",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Könnyű, univerzális színfilter asztalra, játékokra és alkalmazásokra.",
+        description: "Könnyű, univerzális színfilter asztalra, játékokra és alkalmazásokra. HDR-szerű filmes kontraszt és lágyabb, természetesebb megvilágítás. Rendszerszintű szűrő minden GPU-val és anti-cheattel kompatibilis, akadálymentesítési előbeállításokkal és gyorsbillentyűkkel. Nulla késleltetés, helyben fut, nincs telemetria.",
+        techList: ["Rendszerszintű szűrő", "HDR", "Filmes", "Nulla késleltetés", "Adatvédelem első"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Hozza vissza a színt az életébe.",
@@ -2295,6 +2511,14 @@ const remainingTranslations = {
       title: "Vybrané Projekty",
       subtitle: "Prozkoumejte náš portfólio úspěšných projektů, které představují naši odbornost v tvorbě špičkových digitálních řešení.",
       technologies: "Technologie",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Lehký univerzální barevný filtr pro plochu, hry a aplikace.",
+        description: "Lehký univerzální barevný filtr pro plochu, hry a aplikace. Filmový kontrast ve stylu HDR a jemnější, přirozenější osvětlení. Systémový filtr kompatibilní se všemi GPU a anti-cheatem, s předvolbami přístupnosti a zkratkami. Nulová latence, běží lokálně bez telemetrie.",
+        techList: ["Systémový filtr", "HDR", "Filmový", "Nulová latence", "Soukromí na prvním místě"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Přiveďte barvu zpět do svého života.",
@@ -2373,6 +2597,14 @@ const remainingTranslations = {
       title: "Προτεινόμενα Έργα",
       subtitle: "Εξερευνήστε το χαρτοφυλάκιό μας επιτυχημένων έργων που δείχνουν την εμπειρία μας στη δημιουργία προηγμένων ψηφιακών λύσεων.",
       technologies: "Τεχνολογίες",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "Ελαφρύ, καθολικό φίλτρο χρωμάτων για επιτραπέζιο, παιχνίδια και εφαρμογές.",
+        description: "Ελαφρύ, καθολικό φίλτρο χρωμάτων για επιτραπέζιο, παιχνίδια και εφαρμογές. Κινηματογραφική αντίθεση τύπου HDR και πιο απαλό, φυσικό φωτισμό. Φίλτρο συστήματος συμβατό με όλες τις GPU και anti-cheat, με προεπιλογές προσβασιμότητας και συντόμευσεις. Μηδενική καθυστέρηση, τρέχει τοπικά χωρίς τηλεμετρία.",
+        techList: ["Φίλτρο συστήματος", "HDR", "Κινηματογραφικό", "Μηδενική καθυστέρηση", "Απόρρητο πρώτα"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "Φέρτε το χρώμα πίσω στη ζωή σας.",
@@ -2451,6 +2683,14 @@ const remainingTranslations = {
       title: "פרויקטים מומלצים",
       subtitle: "חקור את תיק הפרויקטים המוצלח שלנו שמדגים את המומחיות שלנו ביצירת פתרונות דיגיטליים מהמתקדמים ביותר.",
       technologies: "טכנולוגיות",
+      colorAdaptGaming: {
+        title: "ColorAdapt Gaming",
+        subtitle: "מסנן צבע אוניברסלי קל למחשב שולחני, משחקים ואפליקציות.",
+        description: "מסנן צבע אוניברסלי קל שעובד על מחשב שולחני, משחקים ואפליקציות. ניגודיות קולנועית בסגנון HDR ותאורה רכה וטבעית יותר. מסנן ברמת מערכת תואם לכל כרטיסי המסך ואנטי-צ'יט, עם קדם-הגדרות נגישות וקיצורי מקלדת. אפס השהייה, רץ מקומית בלי טלמטריה.",
+        techList: ["מסנן ברמת מערכת", "HDR", "קולנועי", "אפס השהייה", "פרטיות קודם"],
+        steamStore: "Steam",
+        microsoftStore: "Microsoft Store"
+      },
       colorAdapt: {
         title: "ColorAdapt",
         subtitle: "החזר צבע לחיים שלך.",
@@ -2525,14 +2765,17 @@ export type ProjectCopy = {
   subtitle: string;
   description: string;
   techList: string[];
-  visitWebsite: string;
-  downloadExtension: string;
+  visitWebsite?: string;
+  downloadExtension?: string;
+  steamStore?: string;
+  microsoftStore?: string;
 };
 
 export type ProjectsCopy = {
   title: string;
   subtitle: string;
   technologies: string;
+  colorAdaptGaming?: ProjectCopy;
   colorAdapt: ProjectCopy;
   musicAdapt: ProjectCopy;
   soundAdapt?: ProjectCopy;
