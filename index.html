@@ -1,10 +1,15 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
-    <title>PetrovskiStudio Creative Hub</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PetrovskiStudio</title>
+    <meta name="description" content="PetrovskiStudio builds browser extensions and PC apps for sound, color, photos, focus and gaming. Private by design: no accounts, no tracking." />
+    <meta name="theme-color" content="#000000" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <script>
+      try { var t = localStorage.getItem('ps.theme'); if (t !== 'dark' && t !== 'light') t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'; document.documentElement.dataset.theme = t; var l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('ps.lang'); if (l === 'ar' || l === 'he') document.documentElement.dir = 'rtl'; } catch (e) {}
+    </script>
   </head>
   <body>
     <div id="root"></div>
